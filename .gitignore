@@ -1,0 +1,7 @@
+# 工作目录内部文件(非站点资源)
+cache/
+tools/
+assets/
+# 图片原稿(站点仅使用 webp 与 PDF)
+img/*.jpg
+img/*.png

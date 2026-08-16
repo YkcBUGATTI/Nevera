@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEVERA — Rimac Nevera 与 Nevera R · 电动纪录机器</title>
+<meta name="description" content="Rimac Nevera 与 Nevera R 双语介绍:四电机扭矩矢量、1,914→2,107 hp、单日 23+24 项世界纪录、431.45 km/h 最快 EV 极速。资料来自 Rimac 官网与官方新闻稿。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="NEVERA — Rimac Nevera 与 Nevera R">
+<meta property="og:description" content="以亚得里亚海突发风暴为名的电动超跑:四电机 · 47 项单日世界纪录 · 431.45 km/h">
+<meta property="og:image" content="img/nevera-r-the-rise-of-a-new-era.webp">
+<link rel="stylesheet" href="css/style.css?v=4">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M0 0 L100 0 L100 86 L86 100 L0 100 Z' fill='%2304070c'/%3E%3Cpath d='M58 18 L30 58 L47 58 L40 84 L72 42 L53 42 Z' fill='%2337e0ff'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- ============ 顶栏(首屏隐藏,滚动后出现) ============ -->
+<header class="nav is-hero" id="nav">
+  <div class="nav__inner">
+    <span class="nav__now" id="navNow">00 · 序</span>
+    <a class="nav__brand" href="#hero">
+      <span class="nav__brand-mark">RIMAC <span>NEVERA</span></span>
+    </a>
+    <span class="nav__lang">
+      <a class="lang-btn" href="en.html">EN</a>
+      <button class="nav__menu-btn" id="menuBtn" aria-label="章节菜单" aria-expanded="false"><span class="nav__menu-icon"><i></i><i></i><i></i></span></button>
+    </span>
+  </div>
+  <div class="nav__progress" aria-hidden="true"><i id="navBar"></i></div>
+</header>
+
+<!-- 章节菜单浮层 -->
+<div class="menu-overlay" id="menuOverlay">
+  <nav class="menu-overlay__nav" aria-label="章节菜单">
+    <a href="#origin"><span class="idx">序</span>车库起源</a>
+    <a href="#storm"><span class="idx">01</span>风暴之名</a>
+    <a href="#powertrain"><span class="idx">02</span>四电机</a>
+    <a href="#crafted"><span class="idx">03</span>克罗地亚制造</a>
+    <a href="#records"><span class="idx">04</span>纪录机器</a>
+    <a href="#neverar"><span class="idx">05</span>Nevera R</a>
+    <a href="#specs"><span class="idx">06</span>技术规格</a>
+  </nav>
+  <p class="menu-overlay__sub">RIMAC AUTOMOBILI · NEVERA / NEVERA R · 2021 → 2025</p>
+</div>
+
+<!-- 滚动进度表盘 -->
+<div class="scroll-gauge" id="scrollGauge" aria-hidden="true">
+  <svg viewBox="0 0 44 44"><circle cx="22" cy="22" r="19"/><circle class="sg__bar" cx="22" cy="22" r="19"/></svg>
+  <span class="sg__num">00</span>
+</div>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero__media">
+    <div class="hero__parallax">
+      <video autoplay muted loop playsinline preload="metadata" poster="video/storm-poster.jpg">
+        <source src="video/storm.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="hero__veil"></div>
+  </div>
+  <div class="hero__content">
+    <p class="hero__kicker">RIMAC AUTOMOBILI · CROATIA · EST. 2009</p>
+    <h1 class="hero__title">NEVERA</h1>
+    <p class="hero__sub">以亚得里亚海突发风暴为名的电动超跑</p>
+    <div class="hero__stats">
+      <span><b>2<em>,</em>107</b>hp · Nevera R</span>
+      <span><b>1.72</b>s · 0–100 km/h</span>
+      <span><b>23+24</b>项 · 世界纪录</span>
+    </div>
+  </div>
+  <a class="hero__scroll" href="#origin" aria-label="向下滚动">SCROLL</a>
+</section>
+
+<!-- ============ 序 · 车库起源 ============ -->
+<section class="chapter" id="origin">
+  <div class="wrap">
+    <div class="prose prose--center reveal">
+      <span class="lbl">Prologue · 序</span>
+      <p class="lead">一家超跑公司,从车库创业为起点。</p>
+      <p>Mate Rimac 19 岁那年,把这台用于漂移和场地赛的 E30 改装成纯电动车——e-M3。它最终进化到约 600 hp、900 Nm,0–100 km/h 3.3 秒,并创下 5 项电动车世界纪录。2009 年,Rimac Automobili 在克罗地亚萨格勒布近郊的 Sveta Nedelja 成立。</p>
+    </div>
+
+    <div class="tline">
+      <div class="tline__item reveal">
+        <span class="tline__year">2009</span>
+        <span class="tline__node"></span>
+        <div class="tline__name">公司成立<small>起点是车库里的电动宝马 e-M3,5 项 EV 世界纪录的来处</small></div>
+      </div>
+      <div class="tline__item reveal">
+        <span class="tline__year">2011</span>
+        <span class="tline__node"></span>
+        <div class="tline__name">Concept_One<small>世界第一台纯电超跑概念,1/4 英里 9.9 秒——当年的最快加速 EV</small></div>
+      </div>
+      <div class="tline__item reveal">
+        <span class="tline__year">2018</span>
+        <span class="tline__node"></span>
+        <div class="tline__name">C_Two 概念车<small>日内瓦车展首秀,设下 412 km/h 的极速目标</small></div>
+      </div>
+      <div class="tline__item reveal">
+        <span class="tline__year">2021</span>
+        <span class="tline__node"></span>
+        <div class="tline__name">Nevera 量产版<small>C_Two 更名而来;同期 Bugatti Rimac 合资成立,Mate Rimac 任 CEO</small></div>
+      </div>
+      <div class="tline__item reveal">
+        <span class="tline__year">2023</span>
+        <span class="tline__node"></span>
+        <div class="tline__name">23 项纪录<small>5 月 17 日,ATP Papenburg,一天之内</small></div>
+      </div>
+      <div class="tline__item reveal">
+        <span class="tline__year">2025</span>
+        <span class="tline__node"></span>
+        <div class="tline__name">Nevera R 的 24 项<small>两年后,进化形态在同一条跑道上全面刷新前代</small></div>
+      </div>
+    </div>
+
+    <div class="quote reveal">
+      <blockquote>「说实话,当年在车库里折腾第一台车的时候,我做梦也想不到 15 年后我们会在这里。早年有很多次,我们都以为公司撑不下去了。」</blockquote>
+      <figcaption><b>Mate Rimac</b> — Rimac 集团创始人及总裁 · Bugatti Rimac CEO(2024,15 周年)</figcaption>
+      <span class="quote__en">"Honestly, when I started to tinker with my first car in a garage, I couldn't have even dreamt of being where we are 15 years later. There were so many times in the early years that we really thought the company wouldn't make it."</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 01 风暴之名 ============ -->
+<div class="chapter-break chapter-break--deep" id="storm" data-chapter>
+  <span class="chapter-break__wm" aria-hidden="true">01</span>
+  <div class="ticks chapter-break__ticks"></div>
+  <div class="chapter-break__inner">
+    <span class="chapter-break__no">01</span>
+    <div>
+      <h2>风暴之名<span class="latin">The Name of the Storm</span></h2>
+      <p class="chapter-break__sub">nevera,克罗地亚语:亚得里亚海上突发的雷暴——来得快、猛,而且带电。2021 年 6 月 1 日,量产版 C_Two 以此为名登场。</p>
+    </div>
+  </div>
+</div>
+
+<section class="chapter chapter--dark" id="stormbody">
+  <div class="wrap">
+    <div class="media-row reveal">
+      <div class="media-row__media">
+        <img src="img/rimac-nevera-launch-front.webp" srcset="img/m/rimac-nevera-launch-front.webp 720w, img/rimac-nevera-launch-front.webp 2400w" sizes="(max-width: 980px) 100vw, 2400px" alt="Nevera 量产版发布" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">Launch · 2021</span>
+        <h3>150 台,每台都由 Mate 签署</h3>
+        <p>Nevera 限量 <b>150 台</b>,每台都在克罗地亚手工制造,并由 Mate Rimac 本人测试、签署后交付。1,914 hp、258 mph、约 200 万欧元——2021 年发布时,这些数字没有一台量产电动车接近过。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="vsection">
+    <video autoplay muted loop playsinline preload="none" poster="video/design-poster.jpg" data-autoview>
+      <source src="video/design.mp4" type="video/mp4">
+    </video>
+    <div class="vsection__veil"></div>
+    <div class="vsection__content">
+      <p class="vsection__kicker">DESIGN</p>
+      <h3 class="vsection__title">领带、蝴蝶门与空气动力</h3>
+      <p class="vsection__text">贯穿车身的「cravat」领带特征致敬 17 世纪克罗地亚的领带文化,2011 年首次出现在 Concept_One 上;在 Nevera 上,它同时承担引导气流的功效。</p>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="figrow">
+      <figure class="figure reveal" data-stagger="1">
+        <div class="figure__media"><img src="img/nevera-intro_slider_07-optimised.webp" srcset="img/m/nevera-intro_slider_07-optimised.webp 720w, img/nevera-intro_slider_07-optimised.webp 2400w" sizes="(max-width: 980px) 100vw, 2400px" alt="Nevera 前部 45 度" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">A</span><span>前脸——水平线条与主动扰流,GT 般的流线。</span></figcaption>
+      </figure>
+      <figure class="figure reveal" data-stagger="2">
+        <div class="figure__media"><img src="img/nevera-intro_slider_08-optimised.webp" srcset="img/m/nevera-intro_slider_08-optimised.webp 720w, img/nevera-intro_slider_08-optimised.webp 2400w" sizes="(max-width: 980px) 100vw, 2400px" alt="Nevera 侧面轮廓" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">B</span><span>侧影——主动尾翼升起时的完整轮廓。</span></figcaption>
+      </figure>
+      <figure class="figure reveal" data-stagger="3">
+        <div class="figure__media"><img src="img/rimac-nevera-r-launch-lights.webp" srcset="img/m/rimac-nevera-r-launch-lights.webp 720w, img/rimac-nevera-r-launch-lights.webp 2400w" sizes="(max-width: 980px) 100vw, 2400px" alt="Nevera R 发布官方图,蝴蝶门全开" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">C</span><span>发布仪式——蝴蝶门全开(官方新闻稿配图)。</span></figcaption>
+      </figure>
+    </div>
+
+    <div class="quote reveal">
+      <blockquote>「就是它。十年前我开始这段『不可能的旅程』时,脑海里想的就是这台车。它生来就是为了超越——为了把标准再抬高一次。」</blockquote>
+      <figcaption><b>Mate Rimac</b> — Rimac Automobili 创始人及 CEO(2021,Nevera 发布)</figcaption>
+      <span class="quote__en">"This is it. This is the car I had in mind when I embarked on the 'impossible' journey ten years ago. This car was born to outperform, and to raise the bar, redefining the norm for performance cars."</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 四电机 ============ -->
+<div class="chapter-break" id="powertrain" data-chapter>
+  <span class="chapter-break__wm" aria-hidden="true">02</span>
+  <div class="ticks chapter-break__ticks"></div>
+  <div class="chapter-break__inner">
+    <span class="chapter-break__no">02</span>
+    <div>
+      <h2>四台电机,四个大脑<span class="latin">Four Motors, One Brain</span></h2>
+      <p class="chapter-break__sub">Nevera 没有中央发动机,也没有传统变速箱——四台独立电机直接驱动四个车轮,扭矩矢量系统每秒 100 次重新计算每个车轮的分配。</p>
+    </div>
+  </div>
+</div>
+
+<section class="chapter" id="ptbody">
+  <div class="wrap">
+    <div class="prose reveal">
+      <span class="lbl">R-AWTV · Torque Vectoring</span>
+      <p class="lead">这是 Nevera 与燃油超跑的分界线:动力不再是发动机经变速箱的分配,而是<b>四个独立、无级、瞬时可调的扭矩源</b>。</p>
+      <p>前轴两台碳套筒永磁电机各 226 kW / 270 Nm,后轴两台各 450 kW / 900 Nm。R-AWTV(Rimac All-Wheel Torque Vectoring)以每秒 100 次的频率对每个车轮独立分配正/负扭矩——加速、单轮限滑、弯中车身姿态,都用扭矩本身完成,而不只依赖刹车。</p>
+    </div>
+
+    <!-- 签名交互:扭矩矢量实验台 -->
+    <div class="torquelab reveal" id="torqueLab">
+      <div class="torquelab__stage">
+        <span class="torquelab__badge">R-AWTV · TOP VIEW · 实时模拟</span>
+        <svg viewBox="0 0 920 480" role="img" aria-label="Four-wheel torque distribution diagram">
+          <defs>
+            <linearGradient id="tlBody" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#17293d"/>
+              <stop offset="1" stop-color="#0a1420"/>
+            </linearGradient>
+            <linearGradient id="tlGlass" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="rgba(55,224,255,0.16)"/>
+              <stop offset="1" stop-color="rgba(55,224,255,0.04)"/>
+            </linearGradient>
+            <linearGradient id="tlBarGrad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#0a86b8"/>
+              <stop offset="1" stop-color="#37e0ff"/>
+            </linearGradient>
+            <filter id="tlGlow" x="-40%" y="-40%" width="180%" height="180%">
+              <feGaussianBlur stdDeviation="2.6" result="b"/>
+              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+            <pattern id="tlGrid" width="36" height="36" patternUnits="userSpaceOnUse">
+              <path d="M36 0H0V36" fill="none" stroke="rgba(148,196,224,0.06)" stroke-width="1"/>
+            </pattern>
+          </defs>
+          <rect x="0" y="0" width="920" height="480" fill="url(#tlGrid)"/>
+          <line class="tl-car__center" x1="460" y1="58" x2="460" y2="398"/>
+          <path class="tl-car__body" d="M460,24 C544,26 596,52 630,94 L676,168 C706,214 726,270 732,328 L736,394 C736,418 720,434 696,434 L224,434 C200,434 184,418 184,394 L188,328 C194,270 214,214 244,168 L290,94 C324,52 376,26 460,24 Z"/>
+          <path class="tl-car__cabin" d="M460,126 C514,130 554,156 574,196 L590,242 C593,254 585,262 573,262 L347,262 C335,262 327,254 330,242 L346,196 C366,156 406,130 460,126 Z"/>
+          <rect class="tl-detail" x="348" y="52" width="44" height="6" rx="3"/>
+          <rect class="tl-detail" x="528" y="52" width="44" height="6" rx="3"/>
+          <rect class="tl-detail" x="424" y="80" width="30" height="5" rx="2.5"/>
+          <rect class="tl-detail" x="466" y="80" width="30" height="5" rx="2.5"/>
+          <rect class="tl-wing" x="306" y="404" width="308" height="12" rx="3"/>
+          <rect class="tl-wing" x="298" y="398" width="9" height="24" rx="2"/>
+          <rect class="tl-wing" x="613" y="398" width="9" height="24" rx="2"/>
+          <rect class="tl-wheel" x="128" y="74" width="120" height="46" rx="12"/>
+          <rect class="tl-rim" x="134" y="80" width="108" height="34" rx="8"/>
+          <rect class="tl-wheel" x="672" y="74" width="120" height="46" rx="12"/>
+          <rect class="tl-rim" x="678" y="80" width="108" height="34" rx="8"/>
+          <rect class="tl-wheel" x="120" y="338" width="120" height="46" rx="12"/>
+          <rect class="tl-rim" x="126" y="344" width="108" height="34" rx="8"/>
+          <rect class="tl-wheel" x="680" y="338" width="120" height="46" rx="12"/>
+          <rect class="tl-rim" x="686" y="344" width="108" height="34" rx="8"/>
+          <rect class="tl-wheelbar" id="tlBarFL" x="134" y="92" width="0" height="10" rx="5"/>
+          <rect class="tl-wheelbar" id="tlBarFR" x="678" y="92" width="0" height="10" rx="5"/>
+          <rect class="tl-wheelbar" id="tlBarRL" x="126" y="356" width="0" height="10" rx="5"/>
+          <rect class="tl-wheelbar" id="tlBarRR" x="686" y="356" width="0" height="10" rx="5"/>
+          <rect class="tl-chip" x="10" y="80" width="102" height="32" rx="4"/>
+          <text class="tl-wheeltxt" x="22" y="101">FL <tspan class="tl-wheeltxt--val" id="tlValFL">0</tspan></text>
+          <rect class="tl-chip" x="808" y="80" width="102" height="32" rx="4"/>
+          <text class="tl-wheeltxt" x="820" y="101">FR <tspan class="tl-wheeltxt--val" id="tlValFR">0</tspan></text>
+          <rect class="tl-chip" x="6" y="344" width="106" height="32" rx="4"/>
+          <text class="tl-wheeltxt" x="18" y="365">RL <tspan class="tl-wheeltxt--val" id="tlValRL">0</tspan></text>
+          <rect class="tl-chip" x="808" y="344" width="106" height="32" rx="4"/>
+          <text class="tl-wheeltxt" x="820" y="365">RR <tspan class="tl-wheeltxt--val" id="tlValRR">0</tspan></text>
+        </svg>
+      </div>
+      <div class="torquelab__panel">
+        <h3 class="torquelab__title">扭矩矢量实验台</h3>
+        <p class="torquelab__desc">选择驾驶场景,或直接拖动滑杆,看 R-AWTV 把 2,340 Nm 电机扭矩送往何处。数值为示意模拟,非实车标定。</p>
+        <div class="torquelab__presets" role="group" aria-label="驾驶场景预设">
+          <button class="torquelab__preset is-on" data-preset="launch">弹射起步</button>
+          <button class="torquelab__preset" data-preset="corner">左弯出弯</button>
+          <button class="torquelab__preset" data-preset="drift">漂移</button>
+          <button class="torquelab__preset" data-preset="wet">湿滑路面</button>
+        </div>
+        <div class="torquelab__sliders">
+          <div class="torquelab__sl"><label>左前 FL<b id="tlPctFL">100%</b></label><input type="range" min="0" max="100" value="100" id="tlInFL" aria-label="左前轮扭矩"></div>
+          <div class="torquelab__sl"><label>右前 FR<b id="tlPctFR">100%</b></label><input type="range" min="0" max="100" value="100" id="tlInFR" aria-label="右前轮扭矩"></div>
+          <div class="torquelab__sl"><label>左后 RL<b id="tlPctRL">100%</b></label><input type="range" min="0" max="100" value="100" id="tlInRL" aria-label="左后轮扭矩"></div>
+          <div class="torquelab__sl"><label>右后 RR<b id="tlPctRR">100%</b></label><input type="range" min="0" max="100" value="100" id="tlInRR" aria-label="右后轮扭矩"></div>
+        </div>
+        <div class="torquelab__readout">
+          <div><b><em id="tlSum">2,340</em> Nm</b><span>当前总扭矩(电机端)</span></div>
+          <div><b>100<small style="font-size:.5em"> 次/秒</small></b><span>R-AWTV 重算频率</span></div>
+        </div>
+        <p class="torquelab__note">前轮上限 270 Nm · 后轮上限 900 Nm(单电机峰值)</p>
+      </div>
+    </div>
+
+    <div class="media-row media-row--flip reveal">
+      <div class="media-row__media">
+        <img src="img/nevera-teardown_02-optimised.webp" srcset="img/m/nevera-teardown_02-optimised.webp 720w, img/nevera-teardown_02-optimised.webp 2132w" sizes="(max-width: 980px) 100vw, 2400px" alt="Nevera 滑板底盘拆解视图" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">Platform · 滑板底盘</span>
+        <h3>电池即结构</h3>
+        <p>碳纤维单体壳与<b>作为结构件的电池包</b>构成滑板底盘,四台电机与单速减速器分置四角。官方工程拆解视图:橙色为高压线束,黄色为减振器。</p>
+        <ul class="kv">
+          <li><span>单体壳</span><b>碳纤维 + 集成电池结构</b></li>
+          <li><span>悬挂</span><b>双叉臂 · 电子调节减振 · 液压升降</b></li>
+          <li><span>制动</span><b>电液 brake-by-wire · 390 mm CCMR</b></li>
+          <li><span>轮胎</span><b>Michelin Pilot Sport 4S · 前 275 / 后 315</b></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="media-row reveal">
+      <div class="media-row__media">
+        <img src="img/nevera-089A9784-edit.webp" srcset="img/m/nevera-089A9784-edit.webp 720w, img/nevera-089A9784-edit.webp 2400w" sizes="(max-width: 980px) 100vw, 2400px" alt="Rimac 电驱总成:电机与减速器" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">E-Axle · 电驱总成</span>
+        <h3>电机与单速减速器</h3>
+        <p>每个电驱单元都是电机、逆变器与单速减速器的集成体。前轴为两台独立单速变速箱,后轴为双电机单壳体设计——没有换挡,也就没有换挡中断。</p>
+        <ul class="kv">
+          <li><span>电机形式</span><b>表贴式永磁 · 碳纤维套筒转子</b></li>
+          <li><span>逆变器</span><b>800 V · 前轴 450 / 后轴 1,000 Arms</b></li>
+          <li><span>冷却</span><b>5 套冷却回路 + 2 套制冷回路</b></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="bigstats reveal">
+      <div class="bigstats__item"><b>120<em> kWh</em></b><span>液冷电池 · 量产车之最(2021)</span></div>
+      <div class="bigstats__item"><b>6,960</b><span>21700 圆柱电芯</span></div>
+      <div class="bigstats__item"><b>500<em> kW</em></b><span>直流快充 · 19 分钟 0→80%</span></div>
+      <div class="bigstats__item"><b>489<em> km</em></b><span>WLTP 续航</span></div>
+    </div>
+  </div>
+
+  <div class="vsection">
+    <video autoplay muted loop playsinline preload="none" poster="video/engineering-poster.jpg" data-autoview>
+      <source src="video/engineering.mp4" type="video/mp4">
+    </video>
+    <div class="vsection__veil"></div>
+    <div class="vsection__content">
+      <p class="vsection__kicker">ENGINEERING</p>
+      <h3 class="vsection__title">Rimac Technology 的另一面</h3>
+      <p class="vsection__text">同一套电池与电驱能力,也以 Rimac Technology 之名供应全球车企,从超跑到量产电动平台;两条业务线互为验证。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 克罗地亚制造 ============ -->
+<div class="chapter-break chapter-break--deep" id="crafted" data-chapter>
+  <span class="chapter-break__wm" aria-hidden="true">03</span>
+  <div class="ticks chapter-break__ticks"></div>
+  <div class="chapter-break__inner">
+    <span class="chapter-break__no">03</span>
+    <div>
+      <h2>克罗地亚制造<span class="latin">Designed, Engineered, Made in Croatia</span></h2>
+      <p class="chapter-break__sub">从 CNC 铣一枚徽标,到手工铺碳纤维、调漆、缝制座椅——每一台 Nevera 的总装约 5 周,年产最高 50 台。</p>
+    </div>
+  </div>
+</div>
+
+<section class="chapter chapter--dark" id="craftbody">
+  <div class="wrap">
+    <div class="dcards">
+      <div class="dcard reveal" data-stagger="0">
+        <img src="img/nevera-in_house_slider_01-optimised.webp" srcset="img/m/nevera-in_house_slider_01-optimised.webp 720w, img/nevera-in_house_slider_01-optimised.webp 1440w" sizes="(max-width: 980px) 100vw, 2400px" alt="CNC 铣削 NEVERA 徽标" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">Craft · 01</span>
+          <h3>铣一枚徽标</h3>
+          <p>NEVERA 徽标逐字从铝棒上<b>CNC 精铣</b>而来,公差以微米计。</p>
+        </div>
+      </div>
+      <div class="dcard reveal" data-stagger="1">
+        <img src="img/nevera-in_house_slider_02-optimised.webp" srcset="img/m/nevera-in_house_slider_02-optimised.webp 720w, img/nevera-in_house_slider_02-optimised.webp 1440w" sizes="(max-width: 980px) 100vw, 2400px" alt="碳纤维部件手工处理" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">Craft · 02</span>
+          <h3>手铺碳纤维</h3>
+          <p>大型碳纤维结构件的铺层与修整<b>全部手工完成</b>,编织纹理肉眼可辨。</p>
+        </div>
+      </div>
+      <div class="dcard reveal" data-stagger="2">
+        <img src="img/nevera-in_house_slider_03-optimised.webp" srcset="img/m/nevera-in_house_slider_03-optimised.webp 720w, img/nevera-in_house_slider_03-optimised.webp 1440w" sizes="(max-width: 980px) 100vw, 2400px" alt="调漆" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">Craft · 03</span>
+          <h3>36 种标准漆色</h3>
+          <p>每一种金属漆都单独调配试色——标准色 36 种,<b>定制另计</b>。</p>
+        </div>
+      </div>
+      <div class="dcard reveal" data-stagger="3">
+        <img src="img/nevera-in_house_slider_04-optimised.webp" srcset="img/m/nevera-in_house_slider_04-optimised.webp 720w, img/nevera-in_house_slider_04-optimised.webp 1440w" sizes="(max-width: 980px) 100vw, 2400px" alt="座椅缝制与检验" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">Craft · 04</span>
+          <h3>一针一线</h3>
+          <p>座椅皮质与缝线逐台定制, NEVERA 刻字压印于侧翼——<b>每台都独一无二</b>。</p>
+        </div>
+      </div>
+    </div>
+
+    <figure class="figure reveal reveal--clip" style="margin-top:clamp(2.2rem,6vh,3.4rem);">
+      <div class="figure__media">
+        <img src="img/nevera-hypergarage.webp" srcset="img/m/nevera-hypergarage.webp 720w, img/nevera-hypergarage.webp 2400w" sizes="(max-width: 980px) 100vw, 2400px" alt="Hypergarage 中的 Nevera 车队" loading="lazy">
+      </div>
+      <figcaption class="figure__cap"><span class="no">05</span><span>Hypergarage——不同配色与配置的 Nevera 在拱形隧道中列队。150 台里,没有两台完全相同。</span></figcaption>
+    </figure>
+
+    <div class="media-row reveal">
+      <div class="media-row__media">
+        <img src="img/rimac-campus.webp" srcset="img/m/rimac-campus.webp 720w, img/rimac-campus.webp 1920w" sizes="(max-width: 980px) 100vw, 2400px" alt="Rimac 园区夜景航拍" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">Rimac Campus · Zagreb</span>
+        <h3>一座为电而建的园区</h3>
+        <p>萨格勒布近郊的 Rimac 园区一期 2024 年完工:<b>75,000 m²</b> 生产设施,累计投资 1.2 亿欧元。Nevera 与 Nevera R 的总装、复合材料、CNC、内饰与喷漆都在这里,另有三条为欧洲高端车企服务的高压电池产线。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 纪录机器 ============ -->
+<div class="chapter-break" id="records" data-chapter>
+  <span class="chapter-break__wm" aria-hidden="true">04</span>
+  <div class="ticks chapter-break__ticks"></div>
+  <div class="chapter-break__inner">
+    <span class="chapter-break__no">04</span>
+    <div>
+      <h2>纪录机器<span class="latin">The Record Machine</span></h2>
+      <p class="chapter-break__sub">2023 年 5 月 17 日,ATP Papenburg:一天,23 项性能纪录。驾驶者:Rimac 试车手 Goran Drndak。验证:RaceLogic 与 Dewesoft 双独立测量。</p>
+    </div>
+  </div>
+</div>
+
+<section class="chapter" id="recbody">
+  <div class="vsection">
+    <video autoplay muted loop playsinline preload="none" poster="video/highlights-poster.jpg" data-autoview>
+      <source src="video/highlights.mp4" type="video/mp4">
+    </video>
+    <div class="vsection__veil"></div>
+    <div class="vsection__content">
+      <p class="vsection__kicker">17.05.2023 · ATP PAPENBURG</p>
+      <h3 class="vsection__title">23 项,一天之内</h3>
+      <p class="vsection__text">4.0 km 直道,Michelin Cup 2R 公路胎,非预铺沥青,标准 one-foot rollout。纪录车涂装致敬 2011 年那台创纪录的电动宝马 e-M3。</p>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="rec-table reveal">
+      <div class="rec-table__head"><span>测试项目</span><span style="text-align:right">RaceLogic</span><span style="text-align:right">Dewesoft</span></div>
+      <div class="rec-table__row"><span class="k">0–60 mph</span><span class="v">1.74<small> s</small></span><span class="d">1.74<small> s</small></span></div>
+      <div class="rec-table__row"><span class="k">0–100 km/h</span><span class="v">1.82<small> s</small></span><span class="d">1.81<small> s</small></span></div>
+      <div class="rec-table__row"><span class="k">0–200 km/h</span><span class="v">4.42<small> s</small></span><span class="d">4.42<small> s</small></span></div>
+      <div class="rec-table__row"><span class="k">0–300 km/h</span><span class="v">9.23<small> s</small></span><span class="d">9.22<small> s</small></span></div>
+      <div class="rec-table__row"><span class="k">0–400 km/h</span><span class="v">21.32<small> s</small></span><span class="d">21.31<small> s</small></span></div>
+      <div class="rec-table__row"><span class="k">1/4 英里(402 m)</span><span class="v">8.26<small> s</small></span><span class="d">8.25<small> s</small></span></div>
+      <div class="rec-table__row"><span class="k">0–100–0 km/h</span><span class="v">4.03<small> s</small></span><span class="d">3.99<small> s</small></span></div>
+      <div class="rec-table__row"><span class="k">0–400–0 km/h</span><span class="v">29.94<small> s</small></span><span class="d">29.93<small> s</small></span></div>
+      <div class="rec-table__row"><span class="k">100–0 km/h 制动距离</span><span class="v">29.12<small> m</small></span><span class="d">28.96<small> m</small></span></div>
+      <div class="rec-table__row"><span class="k">0–250 mph</span><span class="v">21.89<small> s</small></span><span class="d">21.86<small> s</small></span></div>
+      <p class="rec-table__fine">上表为 23 项中的 10 项;完整名单见 Rimac 官方新闻稿(2023-05-17)。</p>
+    </div>
+
+    <div class="quote reveal">
+      <blockquote>「今天我们造出的这台车,从 0 加速到 400 再刹停,比 McLaren F1 加速到 350 km/h 还快。而且它可以一遍又一遍地做到,顺手把其他所有性能纪录都破了。」</blockquote>
+      <figcaption><b>Mate Rimac</b> — Rimac 集团创始人及总裁(2023)</figcaption>
+      <span class="quote__en">"Today, I am proud to say that the car we've created can get to 400km/h and back to 0 in less time than it took the McLaren F1 to accelerate up to 350km/h. And not only that, but it can do it again and again."</span>
+    </div>
+
+    <!-- 0-400-0 对比条 -->
+    <div class="databar reveal" id="databar0400">
+      <span class="lbl">0–400–0 km/h · 纪录更替</span>
+      <div class="databar__row">
+        <div class="databar__name">Rimac Nevera<small>2023 · ATP Papenburg</small></div>
+        <div class="databar__track"><div class="databar__fill" data-w="99.8"></div></div>
+        <div class="databar__val">29.93 <em>s</em></div>
+      </div>
+      <div class="databar__row">
+        <div class="databar__name">Koenigsegg Jesko Absolut<small>2024 · 前纪录保持者</small></div>
+        <div class="databar__track"><div class="databar__fill" data-w="93.1"></div></div>
+        <div class="databar__val">27.93 <em>s</em></div>
+      </div>
+      <div class="databar__row databar__row--hl">
+        <div class="databar__name">Rimac Nevera R<small>2025 · 同一条直道</small></div>
+        <div class="databar__track"><div class="databar__fill" data-w="86"></div></div>
+        <div class="databar__val">25.79 <em>s</em></div>
+      </div>
+    </div>
+
+    <div class="media-row reveal">
+      <div class="media-row__media">
+        <img src="img/rimac-412kph-record.webp" srcset="img/m/rimac-412kph-record.webp 720w, img/rimac-412kph-record.webp 2400w" sizes="(max-width: 980px) 100vw, 2400px" alt="Nevera 极速测试" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">2022 · 11 · 15 · 412 km/h</span>
+        <h3>三分之一倍音速</h3>
+        <p>ATP Papenburg 两条 4 km 直道,RaceLogic V-Box 测量,首席测试与开发驾驶 Miro Zrnčević 执方向盘,Michelin Cup 2R 轮胎与米其林技师现场支持。412 km/h——2018 年 C_Two 发布时公开立下的目标,在累计 160 万小时研发之后兑现。客户交付车出厂限速 352 km/h,极速只在厂家监督的活动中释放。</p>
+        <p>「以 412 km/h 行驶,意味着以三分之一倍音速前进。」Zrnčević 说。而这台车还能单次充电长途行驶、攻下紧凑赛道、漂移——加速与极速两项纪录,同一台车。</p>
+      </div>
+    </div>
+
+    <div class="media-row media-row--flip reveal">
+      <div class="media-row__media">
+        <img src="img/rimac-nevera-nurburgring.webp" srcset="img/m/rimac-nevera-nurburgring.webp 720w, img/rimac-nevera-nurburgring.webp 2400w" sizes="(max-width: 980px) 100vw, 2400px" alt="Nevera 在纽博格林北环" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">2023 · 08 · 18 · NÜRBURGRING</span>
+        <h3>7:05.298,首战纽北</h3>
+        <p>Rimac 第一次进军纽博格林北环:圈速来自虚拟性能优化与仅约 20 圈的行业池测试;练习周天气多变,计时日是当年赛道最热的一天。20.832 km 全程 7:05.298(20.6 km 布局 7:00.928),把此前量产电动车圈速纪录缩短 20 秒,由 TÜV SÜD 独立验证。Martin Kodrić 驾驶,Michelin Cup2R。</p>
+        <p>「它在城里温和好用,在曲折的乡道上令人兴奋,长途舒适,而到了赛道上,它快得具有毁灭性。」——Martin Kodrić</p>
+      </div>
+    </div>
+
+    <div class="quote reveal">
+      <blockquote>「用 Nevera 破纪录,是整个 Rimac 团队创新与投入的证明。我们第一次来纽北就能有这样的成绩——虚拟性能优化,加上只有大约 20 圈的行业池测试——我为这个结果骄傲。」</blockquote>
+      <figcaption><b>Emilio Scervo</b> — Bugatti Rimac 首席技术官(2023)</figcaption>
+      <span class="quote__en">"Breaking records with the Nevera is a testament to the innovation and dedication of the Rimac team. I'm proud of what we achieved in our first time at the Nürburgring. Our virtual performance optimization, combined with only about 20 laps of industry pool testing, led to a great result."</span>
+    </div>
+
+    <div class="media-row media-row--flip reveal">
+      <div class="media-row__media">
+        <img src="img/rimac-reverse-record.webp" srcset="img/m/rimac-reverse-record.webp 720w, img/rimac-reverse-record.webp 2400w" sizes="(max-width: 980px) 100vw, 2400px" alt="倒车纪录认证现场" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">Reverse · 倒车纪录</span>
+        <h3>倒挡,275 km/h</h3>
+        <p>四电机可以直接全功率反转。2023 年 11 月 7 日,Goran Drndak 在 ATP 倒着跑出 171.34 mph(275.74 km/h),吉尼斯官方见证、Dewesoft 验证——1967 年 Miura 用 V12 正向才达到这个速度。</p>
+        <p>「跑到一半才慢慢适应——你面朝正后方,看着景色加速远去,脖子上的感觉和重刹车几乎一样。」Drndak 说,「这台车完全不是为倒着开设计的,但它又轻松拿下一项纪录。」</p>
+      </div>
+    </div>
+
+    <div class="hcards">
+      <article class="hcard reveal" data-stagger="1">
+        <span class="hcard__year">2021 · 08 · 13</span>
+        <h3>8.582 s</h3>
+        <p class="hcard__num">Famoso · 1/4 英里</p>
+        <p>加州 Famoso 赛道,标准 Michelin Pilot Sport 4S 公路胎:世界最快加速量产车。DragTimes 的 Brooks Weiselblat 驾驶,连续 11 次弹射起步,成绩无衰减。</p>
+      </article>
+      <article class="hcard reveal" data-stagger="2">
+        <span class="hcard__year">2023 · 07</span>
+        <h3>49.32 s</h3>
+        <p class="hcard__num">Goodwood 爬山赛 · 量产车纪录</p>
+        <p>2023 年古德伍德速度节的量产车爬山赛纪录;同一台 Time Attack 涂装的 Nevera,一个多月后又拿下纽北。</p>
+      </article>
+      <article class="hcard reveal" data-stagger="3">
+        <span class="hcard__year">2023 · 08 · 18</span>
+        <h3>12 台</h3>
+        <p class="hcard__num">Nevera Time Attack</p>
+        <p>纪念 2023 纪录之年的限量版,黑绿涂装致敬 2011 年的电动宝马 e-M3;纽北纪录同日在 The Quail 首发,全部售罄。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 Nevera R ============ -->
+<div class="chapter-break chapter-break--deep chapter-break--video" id="neverar" data-chapter>
+  <video class="chapter-break__bg" autoplay muted loop playsinline preload="none" poster="video/rebellious-bg-poster.jpg" data-bgvideo>
+    <source src="video/rebellious-bg.mp4" type="video/mp4">
+  </video>
+  <span class="chapter-break__wm" aria-hidden="true">R</span>
+  <div class="ticks chapter-break__ticks"></div>
+  <div class="chapter-break__inner">
+    <span class="chapter-break__no">05</span>
+    <div>
+      <h2>Nevera R<span class="latin">Radical · Rebellious · Relentless</span></h2>
+      <p class="chapter-break__sub">2024 年 8 月 16 日发布:从 Hyper GT 转向 Hyper Sportscar——2,107 hp、108 kWh 新电池、固定大尾翼,限量 40 台。</p>
+    </div>
+  </div>
+</div>
+
+<section class="chapter chapter--dark" id="rbody">
+  <div class="vsection">
+    <video autoplay muted loop playsinline preload="none" poster="video/nevera-r-poster.jpg" data-autoview>
+      <source src="video/nevera-r.mp4" type="video/mp4">
+    </video>
+    <div class="vsection__veil"></div>
+    <div class="vsection__content">
+      <p class="vsection__kicker">NEVERA R · 2024</p>
+      <h3 class="vsection__title">为过弯而重新设计</h3>
+      <p class="vsection__text">同样的四电机架构,更轻的电池、更大的功率、更强的下压力——所有改变的指向只有一个:弯速。</p>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="media-row reveal">
+      <div class="media-row__media">
+        <img src="img/nevera-r-radical.webp" srcset="img/m/nevera-r-radical.webp 720w, img/nevera-r-radical.webp 1920w" sizes="(max-width: 980px) 100vw, 2400px" alt="Nevera R 行驶追拍" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">Evolution · 进化</span>
+        <h3>固定大尾翼与新扩散器</h3>
+        <p>相比标准 Nevera,<b>下压力 +15%、气动效率 +10%</b>。新 Michelin Cup 2 轮胎让总转向不足减少 10%、横向抓地增加 5%,Nardò 操控赛道圈速快 3.8 秒。首发色 Nebula Green,从 Time Attack 版的 Lightning Green 演变而来。</p>
+        <ul class="kv">
+          <li><span>发布</span><b>2024-08-16 · Monterey Car Week 亮相</b></li>
+          <li><span>限量</span><b>40 台 · 起价 230 万欧元</b></li>
+          <li><span>车轮</span><b>前 20 / 后 21 英寸新设计</b></li>
+          <li><span>制动</span><b>EVO2 碳陶 + 硅基矩阵层</b></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="bigstats reveal">
+      <div class="bigstats__item"><b>2<em>,</em>107</b><span>hp · 四电机</span></div>
+      <div class="bigstats__item"><b>108<em> kWh</em></b><span>下一代电池 · 更轻</span></div>
+      <div class="bigstats__item"><b>+15<em>%</em></b><span>下压力 vs Nevera</span></div>
+      <div class="bigstats__item"><b>40</b><span>台 · 全球限量</span></div>
+    </div>
+
+    <div class="figrow figrow--2">
+      <figure class="figure reveal">
+        <div class="figure__media"><img src="img/nevera-r-aerodynamics-1.webp" srcset="img/m/nevera-r-aerodynamics-1.webp 720w, img/nevera-r-aerodynamics-1.webp 1920w" sizes="(max-width: 980px) 100vw, 2400px" alt="Nevera R 固定尾翼特写" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">Aero · 01</span><span>固定式碳纤维大尾翼与贯穿式灯带——低角度的攻击性。</span></figcaption>
+      </figure>
+      <figure class="figure reveal" data-stagger="1">
+        <div class="figure__media"><img src="img/nevera-r-weight.webp" srcset="img/m/nevera-r-weight.webp 720w, img/nevera-r-weight.webp 1920w" sizes="(max-width: 980px) 100vw, 2400px" alt="Nevera R 俯视" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">Aero · 02</span><span>俯视——碳纤维车顶、机盖通风口与翼面「RIMAC」字样。</span></figcaption>
+      </figure>
+    </div>
+
+    <div class="dcards dcards--3">
+      <div class="dcard reveal" data-stagger="0">
+        <img src="img/nevera-r-new-wheels.webp" srcset="img/m/nevera-r-new-wheels.webp 720w, img/nevera-r-new-wheels.webp 1920w" sizes="(max-width: 980px) 100vw, 2400px" alt="Nevera R 新轮毂与制动" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">Detail · 01</span>
+          <h3>长辐条新轮毂</h3>
+          <p>20/21 英寸双色分体设计,中央锁止;后轴负外倾角增大,弯中贴地性更好。</p>
+        </div>
+      </div>
+      <div class="dcard reveal" data-stagger="1">
+        <img src="img/nevera-r-body-architecture-2.webp" srcset="img/m/nevera-r-body-architecture-2.webp 720w, img/nevera-r-body-architecture-2.webp 1920w" sizes="(max-width: 980px) 100vw, 2400px" alt="Nevera R 前脸特写" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">Detail · 02</span>
+          <h3>水平线条前脸</h3>
+          <p>前舱盖通风口与前铲翼片强调宽度与贴地感——每一处开口都有冷却或气动理由。</p>
+        </div>
+      </div>
+      <div class="dcard reveal" data-stagger="2">
+        <img src="img/nevera-r-body-architecture-4.webp" srcset="img/m/nevera-r-body-architecture-4.webp 720w, img/nevera-r-body-architecture-4.webp 1920w" sizes="(max-width: 980px) 100vw, 2400px" alt="Nevera R C 柱徽标" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">Detail · 03</span>
+          <h3>C 柱上的身份</h3>
+          <p>碳纤维面板蚀刻「NEVERA R」——R 的名字,写在离驾驶者最近的结构上。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="media-row media-row--flip reveal">
+      <div class="media-row__media">
+        <img src="img/nevera-r-interior-2.webp" srcset="img/m/nevera-r-interior-2.webp 720w, img/nevera-r-interior-2.webp 1920w" sizes="(max-width: 980px) 100vw, 2400px" alt="Nevera R 座舱" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">Cockpit · 座舱</span>
+        <h3>可以定制颜色的仪表台</h3>
+        <p>仪表台主体与中控台采用<b>喷涂碳纤维</b>,可选与车身同色或任意定制;副屏实时显示横向/纵向 G 值与功率输出。旋钮、缝线、阳极氧化件全部开放个性化。</p>
+      </div>
+    </div>
+
+    <!-- 2025 纪录 -->
+    <div class="prose reveal" style="margin-top:clamp(2.6rem,7vh,4.4rem);">
+      <span class="lbl">09.07.2025 · 24 Records</span>
+      <p class="lead">两年后,同一条 Papenburg 直道:Nevera R 在交付前的最终验证中<b>一天刷出 24 项纪录</b>——把标准 Nevera 保持的每一项全部改写。</p>
+    </div>
+
+    <div class="media-row media-row--flip reveal">
+      <div class="media-row__media">
+        <video autoplay muted loop playsinline preload="none" poster="video/records-run-poster.jpg" data-autoview>
+          <source src="video/records-run.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">0–400–0 · 25.79 s</span>
+        <h3>17.35 秒到 400,再刹停</h3>
+        <p>高速模式下的最终验证:0–100 km/h 1.72 秒,0–300 km/h 7.89 秒,0–400 km/h 17.35 秒,随后刹停——合计 25.79 秒,比两年前快 4.14 秒。极速 <b>431.45 km/h</b>,量产电动车极速纪录再度易主;全部数据由 Dewesoft 独立验证。</p>
+      </div>
+    </div>
+
+    <div class="figrow figrow--2">
+      <figure class="figure reveal">
+        <div class="figure__media"><img src="img/nevera-r-cornering.webp" srcset="img/m/nevera-r-cornering.webp 720w, img/nevera-r-cornering.webp 1920w" sizes="(max-width: 980px) 100vw, 2400px" alt="Nevera R 山路过弯" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">R · 01</span><span>雾中过弯——大尾翼与 C 形尾灯,后视角最清晰的自我介绍。</span></figcaption>
+      </figure>
+      <figure class="figure reveal" data-stagger="1">
+        <div class="figure__media"><img src="img/rimac-nevera-r-0-400-0.webp" srcset="img/m/rimac-nevera-r-0-400-0.webp 720w, img/rimac-nevera-r-0-400-0.webp 2400w" sizes="(max-width: 980px) 100vw, 2400px" alt="ATP 纪录日高速行驶" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">R · 02</span><span>ATP 纪录日——24 项纪录就在这样的冲刺中一项项写下的(官方新闻稿配图)。</span></figcaption>
+      </figure>
+    </div>
+
+    <div class="quote reveal">
+      <blockquote>「Nevera 发布时,超跑性能的天花板似乎已经被摸到了。我们用一代车,完成了过去需要几十年才能完成的跨越——而 Nevera R,还要更快。破纪录写在我们 DNA 里,我们不会停在这里。」</blockquote>
+      <figcaption><b>Mate Rimac</b> — Rimac 集团创始人及总裁(2025)</figcaption>
+      <span class="quote__en">"In a single generation, we had created a performance jump that previously would have taken decades. But now, through relentless innovation, Nevera R goes even faster. Breaking records is in our DNA, and we won't stop here."</span>
+    </div>
+
+    <div class="media-row reveal">
+      <div class="media-row__media">
+        <img src="img/rimac-nevera-r-founders.webp" srcset="img/m/rimac-nevera-r-founders.webp 720w, img/rimac-nevera-r-founders.webp 2400w" sizes="(max-width: 980px) 100vw, 2400px" alt="Nevera R Founder's Edition" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">Founder's Edition · 终章</span>
+        <h3>10 台,一周内分配完毕</h3>
+        <p>Nevera R 家族顶端是 <b>Founder's Edition</b>:全球 10 台,2025 年 8 月私下发布后一周内全部归属确定。首台于 2026 年 1 月 30 日在圣莫里茨冰湖交付——Côte d'Azur 蓝上体、钛银下体,2 mm 中央车顶条纹织入领带纹样与电路板图形。每一台都由 Mate Rimac 亲自交付。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 技术规格 ============ -->
+<div class="chapter-break" id="specs" data-chapter>
+  <span class="chapter-break__wm" aria-hidden="true">06</span>
+  <div class="ticks chapter-break__ticks"></div>
+  <div class="chapter-break__inner">
+    <span class="chapter-break__no">06</span>
+    <div>
+      <h2>技术规格<span class="latin">Specifications</span></h2>
+      <p class="chapter-break__sub">Nevera 与 Nevera R 并排列清。数据来自 Rimac 官网车型页、官方技术规格文件与新闻稿。</p>
+    </div>
+  </div>
+</div>
+
+<section class="chapter" id="specbody">
+  <div class="wrap">
+    <div class="gauges">
+      <figure class="gauge reveal" data-gauge="2107" data-max="2400" data-decimals="0" data-unit="hp">
+        <div class="gauge__svg">
+          <svg viewBox="0 0 200 200"><circle class="gauge__track" cx="100" cy="100" r="84"/><circle class="gauge__bar" cx="100" cy="100" r="84"/></svg>
+          <figcaption><b>0</b></figcaption>
+        </div>
+        <p class="gauge__label">Nevera R 功率<small>Nevera:1,914 hp</small></p>
+      </figure>
+      <figure class="gauge reveal" data-gauge="431.45" data-max="450" data-decimals="2" data-unit="km/h">
+        <div class="gauge__svg">
+          <svg viewBox="0 0 200 200"><circle class="gauge__track" cx="100" cy="100" r="84"/><circle class="gauge__bar" cx="100" cy="100" r="84"/></svg>
+          <figcaption><b>0</b></figcaption>
+        </div>
+        <p class="gauge__label">最快 EV 极速<small>2025 · Nevera R 实测</small></p>
+      </figure>
+      <figure class="gauge reveal" data-gauge="1.72" data-max="3" data-decimals="2" data-unit="s">
+        <div class="gauge__svg">
+          <svg viewBox="0 0 200 200"><circle class="gauge__track" cx="100" cy="100" r="84"/><circle class="gauge__bar" cx="100" cy="100" r="84"/></svg>
+          <figcaption><b>0</b></figcaption>
+        </div>
+        <p class="gauge__label">0–100 km/h<small>Nevera:1.81 s</small></p>
+      </figure>
+      <figure class="gauge reveal" data-gauge="25.79" data-max="32" data-decimals="2" data-unit="s">
+        <div class="gauge__svg">
+          <svg viewBox="0 0 200 200"><circle class="gauge__track" cx="100" cy="100" r="84"/><circle class="gauge__bar" cx="100" cy="100" r="84"/></svg>
+          <figcaption><b>0</b></figcaption>
+        </div>
+        <p class="gauge__label">0–400–0 km/h<small>Nevera:29.93 s</small></p>
+      </figure>
+    </div>
+
+    <div class="specs-tabs reveal" id="specsTabs">
+      <div class="specs-tabs__nav" role="tablist">
+        <button class="specs-tabs__btn is-on" data-tab="nevera" role="tab">Nevera</button>
+        <button class="specs-tabs__btn" data-tab="neverar" role="tab">Nevera R</button>
+      </div>
+      <div class="specs-tabs__panel is-on" data-panel="nevera">
+        <div class="specs__group">
+          <div class="specs__row specs__row--hl"><span class="k">最大功率<small>Power</small></span><span class="v">1,914 hp(1,408 kW)</span></div>
+          <div class="specs__row specs__row--hl"><span class="k">电机扭矩<small>Motor torque</small></span><span class="v">2,340 Nm(轮端 13,430 Nm)</span></div>
+          <div class="specs__row"><span class="k">电机<small>Moteurs</small></span><span class="v">4 × 永磁 · 前 2×226 kW / 后 2×450 kW</span></div>
+          <div class="specs__row"><span class="k">电池<small>Battery</small></span><span class="v">120 kWh · 液冷 · 6,960 × 21700</span></div>
+          <div class="specs__row"><span class="k">快充<small>Charging</small></span><span class="v">500 kW DC · 19 min(0→80%)</span></div>
+          <div class="specs__row"><span class="k">0–100 km/h</span><span class="v">1.81 s(one-foot rollout)</span></div>
+          <div class="specs__row"><span class="k">0–300 km/h</span><span class="v">9.22 s</span></div>
+          <div class="specs__row"><span class="k">1/4 英里</span><span class="v">8.25 s</span></div>
+          <div class="specs__row specs__row--hl"><span class="k">极速<small>Top speed</small></span><span class="v">412 km/h(厂家监督)</span></div>
+          <div class="specs__row"><span class="k">续航<small>WLTP</small></span><span class="v">489 km · 30.0 kWh/100 km</span></div>
+          <div class="specs__row"><span class="k">尺寸<small>Dims</small></span><span class="v">4,745 × 2,052 × 1,240 mm · 轴距 2,745</span></div>
+          <div class="specs__row"><span class="k">整备质量<small>Kerb</small></span><span class="v">2,300 kg</span></div>
+          <div class="specs__row"><span class="k">轮胎<small>Tyres</small></span><span class="v">Michelin PS4S · 前 275/35 R20 · 后 315/35 R20</span></div>
+          <div class="specs__row"><span class="k">限量<small>Production</small></span><span class="v">150 台 · 约 €2M</span></div>
+        </div>
+      </div>
+      <div class="specs-tabs__panel" data-panel="neverar">
+        <div class="specs__group">
+          <div class="specs__row specs__row--hl"><span class="k">最大功率<small>Power</small></span><span class="v">2,107 hp(约 1,549 kW)</span></div>
+          <div class="specs__row specs__row--hl"><span class="k">电机扭矩<small>Motor torque</small></span><span class="v">2,340 Nm</span></div>
+          <div class="specs__row"><span class="k">电机<small>Moteurs</small></span><span class="v">4 × 永磁 · R-AWTV 新一代标定</span></div>
+          <div class="specs__row"><span class="k">电池<small>Battery</small></span><span class="v">108 kWh · 下一代性能取向 · 更轻</span></div>
+          <div class="specs__row"><span class="k">0–100 km/h</span><span class="v">1.72 s(2025 实测)</span></div>
+          <div class="specs__row"><span class="k">0–200 km/h</span><span class="v">3.95 s</span></div>
+          <div class="specs__row"><span class="k">0–300 km/h</span><span class="v">7.89 s</span></div>
+          <div class="specs__row"><span class="k">0–400 km/h</span><span class="v">17.35 s</span></div>
+          <div class="specs__row"><span class="k">1/4 英里</span><span class="v">7.90 s</span></div>
+          <div class="specs__row specs__row--hl"><span class="k">极速<small>Top speed</small></span><span class="v">431.45 km/h 实测 · 官网口径 430</span></div>
+          <div class="specs__row"><span class="k">空气动力学<small>Aero</small></span><span class="v">固定尾翼 · 下压力 +15% · 效率 +10%</span></div>
+          <div class="specs__row"><span class="k">制动<small>Brakes</small></span><span class="v">EVO2 碳陶 · 硅基矩阵层</span></div>
+          <div class="specs__row"><span class="k">轮胎<small>Tyres</small></span><span class="v">Michelin Cup 2 · 前 20″ / 后 21″</span></div>
+          <div class="specs__row"><span class="k">限量<small>Production</small></span><span class="v">40 台 · 起价 €2.3M</span></div>
+        </div>
+      </div>
+    </div>
+
+    <p class="fine reveal">
+      Nevera 数据来自官方《Technical Specifications》(2023-11 版,<a href="img/nevera-tech-specs.pdf" download>下载 PDF</a>)与官网车型页;Nevera R 数据来自 2024-08-16 发布稿与 2025-07-09 纪录稿(Dewesoft 验证),极速同时标注官网口径。加速纪录均为标准 one-foot rollout 条件。
+    </p>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ 页脚 ============ -->
+<footer class="footer">
+  <div class="footer__portal">
+    <div class="wrap">
+      <p class="footer__portal-kicker mono">MORE LEGENDS · 更多传奇</p>
+      <p class="footer__portal-title">HYPERCAR<span class="footer__portal-dot">.</span>SITE</p>
+      <p class="footer__portal-sub">超跑传奇集合介绍页</p>
+      <a class="footer__portal-btn" href="https://www.hypercar.site" target="_blank" rel="noopener">前往 Hypercar →</a>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="footer__contact">
+      <span class="footer__contact-label mono">CONTACT · 联系</span>
+      <div class="footer__contact-btns">
+        <a class="sbtn" href="https://space.bilibili.com/675250962" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M7.1 2.6 8.9.8l2.1 2.1L13.1.8l1.8 1.8-1.7 1.7h2.5c1.9 0 3.4 1.5 3.4 3.4v8.6c0 1.9-1.5 3.4-3.4 3.4H6.3c-1.9 0-3.4-1.5-3.4-3.4V7.7c0-1.9 1.5-3.4 3.4-3.4h2.5L7.1 2.6zM7.6 4.3H6.3c-1.3 0-2.4 1.1-2.4 2.4v8.6c0 1.3 1.1 2.4 2.4 2.4h11.4c1.3 0 2.4-1.1 2.4-2.4V6.7c0-1.3-1.1-2.4-2.4-2.4h-1.3l1.2-1.2-.9-.9-2.2 2.2-2.2-2.2-.9.9 1.2 1.2H7.6z"/><circle cx="9.4" cy="12.6" r="1.5"/><circle cx="14.6" cy="12.6" r="1.5"/></svg>
+          <span class="sbtn__txt"><b>BILIBILI</b><small>@HybridV16 · 哔哩哔哩空间</small></span>
+          <i class="sbtn__arrow">→</i>
+        </a>
+        <a class="sbtn" href="https://www.youtube.com/@HybridV16" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M23.5 7.2s-.2-1.7-.9-2.4c-.9-.9-1.9-.9-2.4-1C16.9 3.5 12 3.5 12 3.5s-4.9 0-8.2.3c-.5.1-1.5.1-2.4 1-.7.7-.9 2.4-.9 2.4S.3 9.2.3 11.2v1.6c0 2 .2 4 .2 4s.2 1.7.9 2.4c.9.9 2.1.9 2.6 1 1.9.2 7.9.3 7.9.3s4.9 0 8.2-.3c.5-.1 1.5-.1 2.4-1 .7-.7.9-2.4.9-2.4s.2-2 .2-4v-1.6c0-2-.2-4-.2-4zM9.7 15.4V8.2l6.4 3.6-6.4 3.6z"/></svg>
+          <span class="sbtn__txt"><b>YOUTUBE</b><small>@HybridV16 · YouTube 频道</small></span>
+          <i class="sbtn__arrow">→</i>
+        </a>
+      </div>
+    </div>
+    <div class="footer__top">
+      <p class="footer__brand mono">RIMAC · NEVERA / NEVERA R</p>
+      <p class="footer__links mono">
+        <a href="index.html">中文</a><a href="en.html">English</a>
+      </p>
+    </div>
+    <div class="footer__disclaimer">
+      <p>本站为爱好者制作的介绍站点,内容、图片与视频均来自 Rimac 官方网站与官方新闻稿,供学习与展示之用。Rimac、Nevera、Nevera R 及相关商标、图片版权归 Rimac Automobili / Bugatti Rimac 所有。性能数据以官方发布为准。</p>
+      <span class="mono">图片来源:<a href="https://www.rimac-automobili.com" target="_blank" rel="noopener">RIMAC-AUTOMOBILI.COM</a> · <a href="https://www.rimac-newsroom.com" target="_blank" rel="noopener">RIMAC-NEWSROOM.COM</a> — SVETA NEDELA · CROATIA · 2009 → 2025</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/lang-detect.js?v=4"></script>
+<script src="js/main.js?v=4"></script>
+</body>
+</html>

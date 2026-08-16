@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEVERA — Rimac Nevera &amp; Nevera R · The Electric Record Machine</title>
+<meta name="description" content="Rimac Nevera and Nevera R: quad-motor torque vectoring, 1,914→2,107 hp, 23+24 world records in single days, 431.45 km/h — the fastest production EV top speed. Sources: Rimac official site and newsroom.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="NEVERA — Rimac Nevera &amp; Nevera R">
+<meta property="og:description" content="The electric hypercar named after a sudden Adriatic storm: four motors · 47 single-day world records · 431.45 km/h">
+<meta property="og:image" content="img/nevera-r-the-rise-of-a-new-era.webp">
+<link rel="stylesheet" href="css/style.css?v=4">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M0 0 L100 0 L100 86 L86 100 L0 100 Z' fill='%2304070c'/%3E%3Cpath d='M58 18 L30 58 L47 58 L40 84 L72 42 L53 42 Z' fill='%2337e0ff'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- ============ Top bar (hidden at hero, appears on scroll) ============ -->
+<header class="nav is-hero" id="nav">
+  <div class="nav__inner">
+    <span class="nav__now" id="navNow">00 · Prologue</span>
+    <a class="nav__brand" href="#hero">
+      <span class="nav__brand-mark">RIMAC <span>NEVERA</span></span>
+    </a>
+    <span class="nav__lang">
+      <a class="lang-btn" href="index.html">中文</a>
+      <button class="nav__menu-btn" id="menuBtn" aria-label="Chapter menu" aria-expanded="false"><span class="nav__menu-icon"><i></i><i></i><i></i></span></button>
+    </span>
+  </div>
+  <div class="nav__progress" aria-hidden="true"><i id="navBar"></i></div>
+</header>
+
+<!-- Chapter menu overlay -->
+<div class="menu-overlay" id="menuOverlay">
+  <nav class="menu-overlay__nav" aria-label="Chapter menu">
+    <a href="#origin"><span class="idx">00</span>Garage Origins</a>
+    <a href="#storm"><span class="idx">01</span>The Name of the Storm</a>
+    <a href="#powertrain"><span class="idx">02</span>Four Motors</a>
+    <a href="#crafted"><span class="idx">03</span>Made in Croatia</a>
+    <a href="#records"><span class="idx">04</span>The Record Machine</a>
+    <a href="#neverar"><span class="idx">05</span>Nevera R</a>
+    <a href="#specs"><span class="idx">06</span>Specifications</a>
+  </nav>
+  <p class="menu-overlay__sub">RIMAC AUTOMOBILI · NEVERA / NEVERA R · 2021 → 2025</p>
+</div>
+
+<!-- Scroll gauge -->
+<div class="scroll-gauge" id="scrollGauge" aria-hidden="true">
+  <svg viewBox="0 0 44 44"><circle cx="22" cy="22" r="19"/><circle class="sg__bar" cx="22" cy="22" r="19"/></svg>
+  <span class="sg__num">00</span>
+</div>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero__media">
+    <div class="hero__parallax">
+      <video autoplay muted loop playsinline preload="metadata" poster="video/storm-poster.jpg">
+        <source src="video/storm.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="hero__veil"></div>
+  </div>
+  <div class="hero__content">
+    <p class="hero__kicker">RIMAC AUTOMOBILI · CROATIA · EST. 2009</p>
+    <h1 class="hero__title">NEVERA</h1>
+    <p class="hero__sub">The electric hypercar named after a sudden Adriatic storm</p>
+    <div class="hero__stats">
+      <span><b>2<em>,</em>107</b>hp · Nevera R</span>
+      <span><b>1.72</b>s · 0–100 km/h</span>
+      <span><b>23+24</b>world records</span>
+    </div>
+  </div>
+  <a class="hero__scroll" href="#origin" aria-label="Scroll down">SCROLL</a>
+</section>
+
+<!-- ============ Prologue · Garage Origins ============ -->
+<section class="chapter" id="origin">
+  <div class="wrap">
+    <div class="prose prose--center reveal">
+      <span class="lbl">Prologue</span>
+      <p class="lead">A hypercar company that started in a garage.</p>
+      <p>At 19, Mate Rimac converted his drift-and-track E30 to electric power — the e-M3. It eventually produced around 600 hp and 900 Nm, reached 100 km/h in 3.3 seconds, and set five world records for electric vehicles. In 2009, Rimac Automobili was founded in Sveta Nedelja, near Zagreb, Croatia.</p>
+    </div>
+
+    <div class="tline">
+      <div class="tline__item reveal">
+        <span class="tline__year">2009</span>
+        <span class="tline__node"></span>
+        <div class="tline__name">Company founded<small>It began with the garage-built electric BMW e-M3 — the car behind five EV world records</small></div>
+      </div>
+      <div class="tline__item reveal">
+        <span class="tline__year">2011</span>
+        <span class="tline__node"></span>
+        <div class="tline__name">Concept_One<small>The world's first all-electric hypercar concept — quarter mile in 9.9 s, the fastest-accelerating EV of its day</small></div>
+      </div>
+      <div class="tline__item reveal">
+        <span class="tline__year">2018</span>
+        <span class="tline__node"></span>
+        <div class="tline__name">C_Two concept<small>Geneva debut — and a 412 km/h top speed target set in public</small></div>
+      </div>
+      <div class="tline__item reveal">
+        <span class="tline__year">2021</span>
+        <span class="tline__node"></span>
+        <div class="tline__name">Nevera production<small>Renamed from C_Two; Bugatti Rimac formed the same year, with Mate Rimac as CEO</small></div>
+      </div>
+      <div class="tline__item reveal">
+        <span class="tline__year">2023</span>
+        <span class="tline__node"></span>
+        <div class="tline__name">23 records<small>May 17, ATP Papenburg — all in one day</small></div>
+      </div>
+      <div class="tline__item reveal">
+        <span class="tline__year">2025</span>
+        <span class="tline__node"></span>
+        <div class="tline__name">Nevera R's 24<small>Two years later, the evolution rewrote every one of them on the same straight</small></div>
+      </div>
+    </div>
+
+    <div class="quote reveal">
+      <blockquote>"Honestly, when I started to tinker with my first car in a garage, I couldn't have even dreamt of being where we are 15 years later. There were so many times in the early years that we really thought the company wouldn't make it."</blockquote>
+      <figcaption><b>Mate Rimac</b> — Founder &amp; President, Rimac Group · CEO, Bugatti Rimac (2024, 15th anniversary)</figcaption>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 01 The Name of the Storm ============ -->
+<div class="chapter-break chapter-break--deep" id="storm" data-chapter>
+  <span class="chapter-break__wm" aria-hidden="true">01</span>
+  <div class="ticks chapter-break__ticks"></div>
+  <div class="chapter-break__inner">
+    <span class="chapter-break__no">01</span>
+    <div>
+      <h2>The Name of the Storm<span class="latin">Nevera</span></h2>
+      <p class="chapter-break__sub">Nevera — Croatian for a sudden, violent storm over the Adriatic: fast, fierce, and charged with lightning. On June 1, 2021, the production C_Two arrived under this name.</p>
+    </div>
+  </div>
+</div>
+
+<section class="chapter chapter--dark" id="stormbody">
+  <div class="wrap">
+    <div class="media-row reveal">
+      <div class="media-row__media">
+        <img src="img/rimac-nevera-launch-front.webp" srcset="img/m/rimac-nevera-launch-front.webp 720w, img/rimac-nevera-launch-front.webp 2400w" sizes="(max-width: 980px) 100vw, 2400px" alt="Nevera production launch" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">Launch · 2021</span>
+        <h3>150 units, each signed by Mate</h3>
+        <p>Nevera is limited to <b>150 units</b>, each hand-built in Croatia, then personally tested and signed by Mate Rimac before delivery. 1,914 hp, 258 mph, around €2 million — in 2021, no production EV had come anywhere near those numbers.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="vsection">
+    <video autoplay muted loop playsinline preload="none" poster="video/design-poster.jpg" data-autoview>
+      <source src="video/design.mp4" type="video/mp4">
+    </video>
+    <div class="vsection__veil"></div>
+    <div class="vsection__content">
+      <p class="vsection__kicker">DESIGN</p>
+      <h3 class="vsection__title">Cravats, Butterfly Doors &amp; Airflow</h3>
+      <p class="vsection__text">The 'cravat' motif running through the body honors 17th-century Croatian necktie culture, first used on the 2011 Concept_One; on the Nevera it also helps guide airflow.</p>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="figrow">
+      <figure class="figure reveal" data-stagger="1">
+        <div class="figure__media"><img src="img/nevera-intro_slider_07-optimised.webp" srcset="img/m/nevera-intro_slider_07-optimised.webp 720w, img/nevera-intro_slider_07-optimised.webp 2400w" sizes="(max-width: 980px) 100vw, 2400px" alt="Nevera front three-quarter" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">A</span><span>Front end — horizontal graphics and active aero, GT-smooth.</span></figcaption>
+      </figure>
+      <figure class="figure reveal" data-stagger="2">
+        <div class="figure__media"><img src="img/nevera-intro_slider_08-optimised.webp" srcset="img/m/nevera-intro_slider_08-optimised.webp 720w, img/nevera-intro_slider_08-optimised.webp 2400w" sizes="(max-width: 980px) 100vw, 2400px" alt="Nevera side profile" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">B</span><span>Side profile — the full silhouette with the active wing raised.</span></figcaption>
+      </figure>
+      <figure class="figure reveal" data-stagger="3">
+        <div class="figure__media"><img src="img/rimac-nevera-r-launch-lights.webp" srcset="img/m/rimac-nevera-r-launch-lights.webp 720w, img/rimac-nevera-r-launch-lights.webp 2400w" sizes="(max-width: 980px) 100vw, 2400px" alt="Launch ceremony, butterfly doors open (official press image)" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">C</span><span>Launch ceremony — butterfly doors open (official press image).</span></figcaption>
+      </figure>
+    </div>
+
+    <div class="quote reveal">
+      <blockquote>"This is it. This is the car I had in mind when I embarked on the 'impossible' journey ten years ago. This car was born to outperform, and to raise the bar, redefining the norm for performance cars."</blockquote>
+      <figcaption><b>Mate Rimac</b> — Founder &amp; CEO, Rimac Automobili (2021, Nevera launch)</figcaption>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 Four Motors ============ -->
+<div class="chapter-break" id="powertrain" data-chapter>
+  <span class="chapter-break__wm" aria-hidden="true">02</span>
+  <div class="ticks chapter-break__ticks"></div>
+  <div class="chapter-break__inner">
+    <span class="chapter-break__no">02</span>
+    <div>
+      <h2>Four Motors, One Brain<span class="latin">R-AWTV</span></h2>
+      <p class="chapter-break__sub">No central engine, no conventional gearbox — four independent motors drive four wheels directly, while the torque vectoring system recalculates each wheel's share 100 times every second.</p>
+    </div>
+  </div>
+</div>
+
+<section class="chapter" id="ptbody">
+  <div class="wrap">
+    <div class="prose reveal">
+      <span class="lbl">R-AWTV · Torque Vectoring</span>
+      <p class="lead">This is where the Nevera parts ways with every combustion hypercar: power is not one engine split by a gearbox, but <b>four independently and continuously controllable torque sources</b>.</p>
+      <p>Two carbon-sleeve permanent-magnet motors on the front axle, each 226 kW / 270 Nm; two at the rear, each 450 kW / 900 Nm. Rimac's All-Wheel Torque Vectoring (R-AWTV) distributes positive or negative torque to each wheel 100 times per second — traction, single-wheel slip control and cornering attitude are all managed with torque itself, not just the brakes.</p>
+    </div>
+
+    <!-- Signature interactive: torque vectoring lab -->
+    <div class="torquelab reveal" id="torqueLab">
+      <div class="torquelab__stage">
+        <span class="torquelab__badge">R-AWTV · TOP VIEW · LIVE SIMULATION</span>
+        <svg viewBox="0 0 920 480" role="img" aria-label="Four-wheel torque distribution diagram">
+          <defs>
+            <linearGradient id="tlBody" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#17293d"/>
+              <stop offset="1" stop-color="#0a1420"/>
+            </linearGradient>
+            <linearGradient id="tlGlass" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="rgba(55,224,255,0.16)"/>
+              <stop offset="1" stop-color="rgba(55,224,255,0.04)"/>
+            </linearGradient>
+            <linearGradient id="tlBarGrad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#0a86b8"/>
+              <stop offset="1" stop-color="#37e0ff"/>
+            </linearGradient>
+            <filter id="tlGlow" x="-40%" y="-40%" width="180%" height="180%">
+              <feGaussianBlur stdDeviation="2.6" result="b"/>
+              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+            <pattern id="tlGrid" width="36" height="36" patternUnits="userSpaceOnUse">
+              <path d="M36 0H0V36" fill="none" stroke="rgba(148,196,224,0.06)" stroke-width="1"/>
+            </pattern>
+          </defs>
+          <rect x="0" y="0" width="920" height="480" fill="url(#tlGrid)"/>
+          <line class="tl-car__center" x1="460" y1="58" x2="460" y2="398"/>
+          <path class="tl-car__body" d="M460,24 C544,26 596,52 630,94 L676,168 C706,214 726,270 732,328 L736,394 C736,418 720,434 696,434 L224,434 C200,434 184,418 184,394 L188,328 C194,270 214,214 244,168 L290,94 C324,52 376,26 460,24 Z"/>
+          <path class="tl-car__cabin" d="M460,126 C514,130 554,156 574,196 L590,242 C593,254 585,262 573,262 L347,262 C335,262 327,254 330,242 L346,196 C366,156 406,130 460,126 Z"/>
+          <rect class="tl-detail" x="348" y="52" width="44" height="6" rx="3"/>
+          <rect class="tl-detail" x="528" y="52" width="44" height="6" rx="3"/>
+          <rect class="tl-detail" x="424" y="80" width="30" height="5" rx="2.5"/>
+          <rect class="tl-detail" x="466" y="80" width="30" height="5" rx="2.5"/>
+          <rect class="tl-wing" x="306" y="404" width="308" height="12" rx="3"/>
+          <rect class="tl-wing" x="298" y="398" width="9" height="24" rx="2"/>
+          <rect class="tl-wing" x="613" y="398" width="9" height="24" rx="2"/>
+          <rect class="tl-wheel" x="128" y="74" width="120" height="46" rx="12"/>
+          <rect class="tl-rim" x="134" y="80" width="108" height="34" rx="8"/>
+          <rect class="tl-wheel" x="672" y="74" width="120" height="46" rx="12"/>
+          <rect class="tl-rim" x="678" y="80" width="108" height="34" rx="8"/>
+          <rect class="tl-wheel" x="120" y="338" width="120" height="46" rx="12"/>
+          <rect class="tl-rim" x="126" y="344" width="108" height="34" rx="8"/>
+          <rect class="tl-wheel" x="680" y="338" width="120" height="46" rx="12"/>
+          <rect class="tl-rim" x="686" y="344" width="108" height="34" rx="8"/>
+          <rect class="tl-wheelbar" id="tlBarFL" x="134" y="92" width="0" height="10" rx="5"/>
+          <rect class="tl-wheelbar" id="tlBarFR" x="678" y="92" width="0" height="10" rx="5"/>
+          <rect class="tl-wheelbar" id="tlBarRL" x="126" y="356" width="0" height="10" rx="5"/>
+          <rect class="tl-wheelbar" id="tlBarRR" x="686" y="356" width="0" height="10" rx="5"/>
+          <rect class="tl-chip" x="10" y="80" width="102" height="32" rx="4"/>
+          <text class="tl-wheeltxt" x="22" y="101">FL <tspan class="tl-wheeltxt--val" id="tlValFL">0</tspan></text>
+          <rect class="tl-chip" x="808" y="80" width="102" height="32" rx="4"/>
+          <text class="tl-wheeltxt" x="820" y="101">FR <tspan class="tl-wheeltxt--val" id="tlValFR">0</tspan></text>
+          <rect class="tl-chip" x="6" y="344" width="106" height="32" rx="4"/>
+          <text class="tl-wheeltxt" x="18" y="365">RL <tspan class="tl-wheeltxt--val" id="tlValRL">0</tspan></text>
+          <rect class="tl-chip" x="808" y="344" width="106" height="32" rx="4"/>
+          <text class="tl-wheeltxt" x="820" y="365">RR <tspan class="tl-wheeltxt--val" id="tlValRR">0</tspan></text>
+        </svg>
+      </div>
+      <div class="torquelab__panel">
+        <h3 class="torquelab__title">Torque Vectoring Lab</h3>
+        <p class="torquelab__desc">Pick a scenario or drag the sliders, and see where R-AWTV sends the 2,340 Nm of motor torque. Values are an illustrative simulation, not actual calibration.</p>
+        <div class="torquelab__presets" role="group" aria-label="Driving scenario presets">
+          <button class="torquelab__preset is-on" data-preset="launch">Launch</button>
+          <button class="torquelab__preset" data-preset="corner">Exit a left turn</button>
+          <button class="torquelab__preset" data-preset="drift">Drift</button>
+          <button class="torquelab__preset" data-preset="wet">Wet road</button>
+        </div>
+        <div class="torquelab__sliders">
+          <div class="torquelab__sl"><label>Front L FL<b id="tlPctFL">100%</b></label><input type="range" min="0" max="100" value="100" id="tlInFL" aria-label="Front left torque"></div>
+          <div class="torquelab__sl"><label>Front R FR<b id="tlPctFR">100%</b></label><input type="range" min="0" max="100" value="100" id="tlInFR" aria-label="Front right torque"></div>
+          <div class="torquelab__sl"><label>Rear L RL<b id="tlPctRL">100%</b></label><input type="range" min="0" max="100" value="100" id="tlInRL" aria-label="Rear left torque"></div>
+          <div class="torquelab__sl"><label>Rear R RR<b id="tlPctRR">100%</b></label><input type="range" min="0" max="100" value="100" id="tlInRR" aria-label="Rear right torque"></div>
+        </div>
+        <div class="torquelab__readout">
+          <div><b><em id="tlSum">2,340</em> Nm</b><span>Total torque (motor-side)</span></div>
+          <div><b>100<small style="font-size:.5em"> /s</small></b><span>R-AWTV recalculation rate</span></div>
+        </div>
+        <p class="torquelab__note">Front wheels capped at 270 Nm · rear wheels at 900 Nm (single-motor peak)</p>
+      </div>
+    </div>
+
+    <div class="media-row media-row--flip reveal">
+      <div class="media-row__media">
+        <img src="img/nevera-teardown_02-optimised.webp" srcset="img/m/nevera-teardown_02-optimised.webp 720w, img/nevera-teardown_02-optimised.webp 2132w" sizes="(max-width: 980px) 100vw, 2400px" alt="Nevera skateboard chassis cutaway" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">Platform · Skateboard</span>
+        <h3>The battery is the structure</h3>
+        <p>A carbon-fiber monocoque with the <b>battery pack as a structural member</b> forms the skateboard chassis; four motor-and-single-speed-reducer units sit at the corners. Official engineering cutaway: orange for high-voltage cabling, yellow for dampers.</p>
+        <ul class="kv">
+          <li><span>Monocoque</span><b>Carbon fiber + structural battery</b></li>
+          <li><span>Suspension</span><b>Double wishbone · electronic dampers · hydraulic lift</b></li>
+          <li><span>Brakes</span><b>Electro-hydraulic brake-by-wire · 390 mm CCMR</b></li>
+          <li><span>Tyres</span><b>Michelin Pilot Sport 4S · 275 front / 315 rear</b></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="media-row reveal">
+      <div class="media-row__media">
+        <img src="img/nevera-089A9784-edit.webp" srcset="img/m/nevera-089A9784-edit.webp 720w, img/nevera-089A9784-edit.webp 2400w" sizes="(max-width: 980px) 100vw, 2400px" alt="Rimac e-axle: motor and reduction gear" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">E-Axle · Drive unit</span>
+        <h3>Motor plus single-speed reducer</h3>
+        <p>Each drive unit integrates motor, inverter and a single-speed reduction gear. The front axle uses two independent single-speed gearboxes; the rear houses a dual-motor, single-housing design — no gearshifts, so no shift interruption.</p>
+        <ul class="kv">
+          <li><span>Motor type</span><b>Surface-mounted PM · carbon-sleeve rotor</b></li>
+          <li><span>Inverters</span><b>800 V · front 450 / rear 1,000 Arms</b></li>
+          <li><span>Cooling</span><b>5 cooling circuits + 2 refrigerant loops</b></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="bigstats reveal">
+      <div class="bigstats__item"><b>120<em> kWh</em></b><span>Liquid-cooled · largest in a production car (2021)</span></div>
+      <div class="bigstats__item"><b>6,960</b><span>cylindrical 21700 cells</span></div>
+      <div class="bigstats__item"><b>500<em> kW</em></b><span>DC fast charge · 0→80% in 19 min</span></div>
+      <div class="bigstats__item"><b>489<em> km</em></b><span>WLTP range</span></div>
+    </div>
+  </div>
+
+  <div class="vsection">
+    <video autoplay muted loop playsinline preload="none" poster="video/engineering-poster.jpg" data-autoview>
+      <source src="video/engineering.mp4" type="video/mp4">
+    </video>
+    <div class="vsection__veil"></div>
+    <div class="vsection__content">
+      <p class="vsection__kicker">ENGINEERING</p>
+      <h3 class="vsection__title">The other side: Rimac Technology</h3>
+      <p class="vsection__text">The same battery and e-drive capability is supplied to global carmakers under the Rimac Technology name — from hypercars to volume EV platforms. The two businesses validate each other.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 Made in Croatia ============ -->
+<div class="chapter-break chapter-break--deep" id="crafted" data-chapter>
+  <span class="chapter-break__wm" aria-hidden="true">03</span>
+  <div class="ticks chapter-break__ticks"></div>
+  <div class="chapter-break__inner">
+    <span class="chapter-break__no">03</span>
+    <div>
+      <h2>Made in Croatia<span class="latin">Designed, Engineered, Manufactured</span></h2>
+      <p class="chapter-break__sub">From CNC-milling a badge to laying carbon fiber by hand, mixing paint and stitching seats — each Nevera takes around five weeks to build, at up to 50 cars a year.</p>
+    </div>
+  </div>
+</div>
+
+<section class="chapter chapter--dark" id="craftbody">
+  <div class="wrap">
+    <div class="dcards">
+      <div class="dcard reveal" data-stagger="0">
+        <img src="img/nevera-in_house_slider_01-optimised.webp" srcset="img/m/nevera-in_house_slider_01-optimised.webp 720w, img/nevera-in_house_slider_01-optimised.webp 1440w" sizes="(max-width: 980px) 100vw, 2400px" alt="CNC milling a NEVERA badge" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">Craft · 01</span>
+          <h3>Milling a badge</h3>
+          <p>Each NEVERA letterform is <b>CNC-milled</b> from aluminum bar, to micron tolerances.</p>
+        </div>
+      </div>
+      <div class="dcard reveal" data-stagger="1">
+        <img src="img/nevera-in_house_slider_02-optimised.webp" srcset="img/m/nevera-in_house_slider_02-optimised.webp 720w, img/nevera-in_house_slider_02-optimised.webp 1440w" sizes="(max-width: 980px) 100vw, 2400px" alt="Hand-finishing carbon fiber" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">Craft · 02</span>
+          <h3>Carbon, by hand</h3>
+          <p>Large structural carbon components are <b>laid and finished by hand</b> — the weave is visible to the eye.</p>
+        </div>
+      </div>
+      <div class="dcard reveal" data-stagger="2">
+        <img src="img/nevera-in_house_slider_03-optimised.webp" srcset="img/m/nevera-in_house_slider_03-optimised.webp 720w, img/nevera-in_house_slider_03-optimised.webp 1440w" sizes="(max-width: 980px) 100vw, 2400px" alt="Paint mixing" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">Craft · 03</span>
+          <h3>36 standard colors</h3>
+          <p>Every metallic paint is mixed and matched individually — <b>36 standards</b>, bespoke on request.</p>
+        </div>
+      </div>
+      <div class="dcard reveal" data-stagger="3">
+        <img src="img/nevera-in_house_slider_04-optimised.webp" srcset="img/m/nevera-in_house_slider_04-optimised.webp 720w, img/nevera-in_house_slider_04-optimised.webp 1440w" sizes="(max-width: 980px) 100vw, 2400px" alt="Seat stitching and inspection" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">Craft · 04</span>
+          <h3>Stitch by stitch</h3>
+          <p>Leather and thread specified per car, NEVERA embossed into the bolster — <b>no two cars alike</b>.</p>
+        </div>
+      </div>
+    </div>
+
+    <figure class="figure reveal reveal--clip" style="margin-top:clamp(2.2rem,6vh,3.4rem);">
+      <div class="figure__media">
+        <img src="img/nevera-hypergarage.webp" srcset="img/m/nevera-hypergarage.webp 720w, img/nevera-hypergarage.webp 2400w" sizes="(max-width: 980px) 100vw, 2400px" alt="Nevera fleet in the Hypergarage" loading="lazy">
+      </div>
+      <figcaption class="figure__cap"><span class="no">05</span><span>The Hypergarage — Neveras in different colors and specifications lined up in the vaulted tunnel. Among the 150, no two are identical.</span></figcaption>
+    </figure>
+
+    <div class="media-row reveal">
+      <div class="media-row__media">
+        <img src="img/rimac-campus.webp" srcset="img/m/rimac-campus.webp 720w, img/rimac-campus.webp 1920w" sizes="(max-width: 980px) 100vw, 2400px" alt="Rimac Campus at night, aerial" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">Rimac Campus · Zagreb</span>
+        <h3>A campus built for electrons</h3>
+        <p>Phase one of the Rimac Campus near Zagreb was completed in 2024: <b>75,000 m²</b> of production space, €120M invested to date. Final assembly, composites, CNC, trim and paint for Nevera and Nevera R all happen here, alongside three high-voltage battery lines serving European premium carmakers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 The Record Machine ============ -->
+<div class="chapter-break" id="records" data-chapter>
+  <span class="chapter-break__wm" aria-hidden="true">04</span>
+  <div class="ticks chapter-break__ticks"></div>
+  <div class="chapter-break__inner">
+    <span class="chapter-break__no">04</span>
+    <div>
+      <h2>The Record Machine<span class="latin">23 Records, One Day</span></h2>
+      <p class="chapter-break__sub">May 17, 2023, ATP Papenburg: 23 performance records in a single day. Driver: Rimac test driver Goran Drndak. Verification: RaceLogic and Dewesoft, independently.</p>
+    </div>
+  </div>
+</div>
+
+<section class="chapter" id="recbody">
+  <div class="vsection">
+    <video autoplay muted loop playsinline preload="none" poster="video/highlights-poster.jpg" data-autoview>
+      <source src="video/highlights.mp4" type="video/mp4">
+    </video>
+    <div class="vsection__veil"></div>
+    <div class="vsection__content">
+      <p class="vsection__kicker">17.05.2023 · ATP PAPENBURG</p>
+      <h3 class="vsection__title">23 records, one day</h3>
+      <p class="vsection__text">A 4.0 km straight, Michelin Cup 2R road tyres, unprepped asphalt, standard one-foot rollout. The record car's livery honored the record-setting electric BMW e-M3 of 2011.</p>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="rec-table reveal">
+      <div class="rec-table__head"><span>Test</span><span style="text-align:right">RaceLogic</span><span style="text-align:right">Dewesoft</span></div>
+      <div class="rec-table__row"><span class="k">0–60 mph</span><span class="v">1.74<small> s</small></span><span class="d">1.74<small> s</small></span></div>
+      <div class="rec-table__row"><span class="k">0–100 km/h</span><span class="v">1.82<small> s</small></span><span class="d">1.81<small> s</small></span></div>
+      <div class="rec-table__row"><span class="k">0–200 km/h</span><span class="v">4.42<small> s</small></span><span class="d">4.42<small> s</small></span></div>
+      <div class="rec-table__row"><span class="k">0–300 km/h</span><span class="v">9.23<small> s</small></span><span class="d">9.22<small> s</small></span></div>
+      <div class="rec-table__row"><span class="k">0–400 km/h</span><span class="v">21.32<small> s</small></span><span class="d">21.31<small> s</small></span></div>
+      <div class="rec-table__row"><span class="k">1/4 mile (402 m)</span><span class="v">8.26<small> s</small></span><span class="d">8.25<small> s</small></span></div>
+      <div class="rec-table__row"><span class="k">0–100–0 km/h</span><span class="v">4.03<small> s</small></span><span class="d">3.99<small> s</small></span></div>
+      <div class="rec-table__row"><span class="k">0–400–0 km/h</span><span class="v">29.94<small> s</small></span><span class="d">29.93<small> s</small></span></div>
+      <div class="rec-table__row"><span class="k">100–0 km/h braking</span><span class="v">29.12<small> m</small></span><span class="d">28.96<small> m</small></span></div>
+      <div class="rec-table__row"><span class="k">0–250 mph</span><span class="v">21.89<small> s</small></span><span class="d">21.86<small> s</small></span></div>
+      <p class="rec-table__fine">Ten of the 23 records shown; the full list is in the official Rimac press release (2023-05-17).</p>
+    </div>
+
+    <div class="quote reveal">
+      <blockquote>"Today, I am proud to say that the car we've created can get to 400km/h and back to 0 in less time than it took the McLaren F1 to accelerate up to 350km/h. And not only that, but it can do it again and again."</blockquote>
+      <figcaption><b>Mate Rimac</b> — Founder &amp; President, Rimac Group (2023)</figcaption>
+    </div>
+
+    <!-- 0-400-0 comparison bars -->
+    <div class="databar reveal" id="databar0400">
+      <span class="lbl">0–400–0 km/h · the record changes hands</span>
+      <div class="databar__row">
+        <div class="databar__name">Rimac Nevera<small>2023 · ATP Papenburg</small></div>
+        <div class="databar__track"><div class="databar__fill" data-w="99.8"></div></div>
+        <div class="databar__val">29.93 <em>s</em></div>
+      </div>
+      <div class="databar__row">
+        <div class="databar__name">Koenigsegg Jesko Absolut<small>2024 · previous holder</small></div>
+        <div class="databar__track"><div class="databar__fill" data-w="93.1"></div></div>
+        <div class="databar__val">27.93 <em>s</em></div>
+      </div>
+      <div class="databar__row databar__row--hl">
+        <div class="databar__name">Rimac Nevera R<small>2025 · the same straight</small></div>
+        <div class="databar__track"><div class="databar__fill" data-w="86"></div></div>
+        <div class="databar__val">25.79 <em>s</em></div>
+      </div>
+    </div>
+
+    <div class="media-row reveal">
+      <div class="media-row__media">
+        <img src="img/rimac-412kph-record.webp" srcset="img/m/rimac-412kph-record.webp 720w, img/rimac-412kph-record.webp 2400w" sizes="(max-width: 980px) 100vw, 2400px" alt="Nevera top speed test" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">2022 · 11 · 15 · 412 km/h</span>
+        <h3>A third of the speed of sound</h3>
+        <p>ATP Papenburg's two 4 km straights, measured by RaceLogic V-Box, driven by Chief Test and Development Driver Miro Zrnčević on Michelin Cup 2R tyres with Michelin engineers in attendance. 412 km/h — the target the C_Two had set in public in 2018, honored after 1.6 million cumulative development hours. Customer cars leave the factory limited to 352 km/h; the full speed is unlocked only at manufacturer-supervised events.</p>
+        <p>"To travel at 412kph, or 258mph, means travelling at a third of the speed of sound," said Zrnčević — and the same car still crosses continents on a charge, devours tight tracks and drifts. Acceleration and V-MAX records, one car.</p>
+      </div>
+    </div>
+
+    <div class="media-row media-row--flip reveal">
+      <div class="media-row__media">
+        <img src="img/rimac-nevera-nurburgring.webp" srcset="img/m/rimac-nevera-nurburgring.webp 720w, img/rimac-nevera-nurburgring.webp 2400w" sizes="(max-width: 980px) 100vw, 2400px" alt="Nevera at the Nürburgring Nordschleife" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">2023 · 08 · 18 · NÜRBURGRING</span>
+        <h3>7:05.298, first attempt</h3>
+        <p>Rimac's first assault on the Nürburgring: the lap came from virtual performance optimization and only about 20 laps of industry pool testing; the practice week brought changeable weather and the timed day was one of the hottest of the year. 7:05.298 over the full 20.832 km (7:00.928 on the 20.6 km layout) — 20 seconds under the previous production-EV record, independently verified by TÜV SÜD. Martin Kodrić driving, Michelin Cup2R.</p>
+        <p>"Gentle and usable in the city, thrilling to drive on twisting B-roads, comfortable over long distances and devastatingly fast on a race track." — Martin Kodrić</p>
+      </div>
+    </div>
+
+    <div class="quote reveal">
+      <blockquote>"Breaking records with the Nevera is a testament to the innovation and dedication of the Rimac team. I'm proud of what we achieved in our first time at the Nürburgring. Our virtual performance optimization, combined with only about 20 laps of industry pool testing, led to a great result."</blockquote>
+      <figcaption><b>Emilio Scervo</b> — Chief Technology Officer, Bugatti Rimac (2023)</figcaption>
+    </div>
+
+    <div class="media-row media-row--flip reveal">
+      <div class="media-row__media">
+        <img src="img/rimac-reverse-record.webp" srcset="img/m/rimac-reverse-record.webp 720w, img/rimac-reverse-record.webp 2400w" sizes="(max-width: 980px) 100vw, 2400px" alt="Reverse record certification" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">Reverse · the record</span>
+        <h3>Reverse gear, 275 km/h</h3>
+        <p>Four motors can spin the wheels backwards at full power. On November 7, 2023, Goran Drndak drove 171.34 mph (275.74 km/h) in reverse at ATP — witnessed by Guinness, verified by Dewesoft. The Miura reached that speed forwards with a V12, in 1967.</p>
+        <p>"It definitely took some getting used to. You're facing straight out backwards watching the scenery flash away from you faster and faster, feeling your neck pulled forwards in almost the same sensation you would normally get under heavy braking," said Drndak. "Despite it being almost completely unnatural to the way the car was engineered, Nevera breezed through yet another record."</p>
+      </div>
+    </div>
+
+    <div class="hcards">
+      <article class="hcard reveal" data-stagger="1">
+        <span class="hcard__year">2021 · 08 · 13</span>
+        <h3>8.582 s</h3>
+        <p class="hcard__num">Famoso · 1/4 mile</p>
+        <p>Famoso Raceway, California, on standard Michelin Pilot Sport 4S road tyres: the world's fastest-accelerating production car. Driven by Brooks Weiselblat of DragTimes — 11 consecutive launches, no degradation.</p>
+      </article>
+      <article class="hcard reveal" data-stagger="2">
+        <span class="hcard__year">2023 · 07</span>
+        <h3>49.32 s</h3>
+        <p class="hcard__num">Goodwood hillclimb · production record</p>
+        <p>The production-car hillclimb record at the 2023 Festival of Speed; the same Time Attack-liveried Nevera took the Nürburgring a month later.</p>
+      </article>
+      <article class="hcard reveal" data-stagger="3">
+        <span class="hcard__year">2023 · 08 · 18</span>
+        <h3>12 units</h3>
+        <p class="hcard__num">Nevera Time Attack</p>
+        <p>A limited edition for the record year, its black-and-green livery honoring the record-setting electric BMW e-M3 of 2011; premiered at The Quail the day of the Nürburgring record — all spoken for.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 Nevera R ============ -->
+<div class="chapter-break chapter-break--deep chapter-break--video" id="neverar" data-chapter>
+  <video class="chapter-break__bg" autoplay muted loop playsinline preload="none" poster="video/rebellious-bg-poster.jpg" data-bgvideo>
+    <source src="video/rebellious-bg.mp4" type="video/mp4">
+  </video>
+  <span class="chapter-break__wm" aria-hidden="true">R</span>
+  <div class="ticks chapter-break__ticks"></div>
+  <div class="chapter-break__inner">
+    <span class="chapter-break__no">05</span>
+    <div>
+      <h2>Nevera R<span class="latin">Radical · Rebellious · Relentless</span></h2>
+      <p class="chapter-break__sub">Revealed August 16, 2024: from Hyper GT to Hyper Sportscar — 2,107 hp, a new 108 kWh battery, a fixed great wing. Limited to 40 units.</p>
+    </div>
+  </div>
+</div>
+
+<section class="chapter chapter--dark" id="rbody">
+  <div class="vsection">
+    <video autoplay muted loop playsinline preload="none" poster="video/nevera-r-poster.jpg" data-autoview>
+      <source src="video/nevera-r.mp4" type="video/mp4">
+    </video>
+    <div class="vsection__veil"></div>
+    <div class="vsection__content">
+      <p class="vsection__kicker">NEVERA R · 2024</p>
+      <h3 class="vsection__title">Re-designed for cornering</h3>
+      <p class="vsection__text">Same quad-motor architecture, lighter battery, more power, more downforce — every change points at one thing: corner speed.</p>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="media-row reveal">
+      <div class="media-row__media">
+        <img src="img/nevera-r-radical.webp" srcset="img/m/nevera-r-radical.webp 720w, img/nevera-r-radical.webp 1920w" sizes="(max-width: 980px) 100vw, 2400px" alt="Nevera R on the move" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">Evolution</span>
+        <h3>Fixed wing, new diffuser</h3>
+        <p>Over the standard Nevera: <b>15% more downforce, 10% better aerodynamic efficiency</b>. New Michelin Cup 2 tyres cut total understeer by 10% and add 5% lateral grip — 3.8 seconds faster around the Nardò handling track. Launch color Nebula Green evolved from the Time Attack's Lightning Green.</p>
+        <ul class="kv">
+          <li><span>Reveal</span><b>2024-08-16 · shown at Monterey Car Week</b></li>
+          <li><span>Production</span><b>40 units · from €2.3M</b></li>
+          <li><span>Wheels</span><b>New 20″ front / 21″ rear designs</b></li>
+          <li><span>Brakes</span><b>EVO2 carbon ceramic + silicone matrix</b></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="bigstats reveal">
+      <div class="bigstats__item"><b>2<em>,</em>107</b><span>hp · four motors</span></div>
+      <div class="bigstats__item"><b>108<em> kWh</em></b><span>next-gen battery · lighter</span></div>
+      <div class="bigstats__item"><b>+15<em>%</em></b><span>downforce vs Nevera</span></div>
+      <div class="bigstats__item"><b>40</b><span>units worldwide</span></div>
+    </div>
+
+    <div class="figrow figrow--2">
+      <figure class="figure reveal">
+        <div class="figure__media"><img src="img/nevera-r-aerodynamics-1.webp" srcset="img/m/nevera-r-aerodynamics-1.webp 720w, img/nevera-r-aerodynamics-1.webp 1920w" sizes="(max-width: 980px) 100vw, 2400px" alt="Nevera R fixed wing detail" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">Aero · 01</span><span>The fixed carbon wing and full-width light bar — aggression from a low angle.</span></figcaption>
+      </figure>
+      <figure class="figure reveal" data-stagger="1">
+        <div class="figure__media"><img src="img/nevera-r-weight.webp" srcset="img/m/nevera-r-weight.webp 720w, img/nevera-r-weight.webp 1920w" sizes="(max-width: 980px) 100vw, 2400px" alt="Nevera R top view" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">Aero · 02</span><span>From above — carbon roof, hood vents and 'RIMAC' across the wing.</span></figcaption>
+      </figure>
+    </div>
+
+    <div class="dcards dcards--3">
+      <div class="dcard reveal" data-stagger="0">
+        <img src="img/nevera-r-new-wheels.webp" srcset="img/m/nevera-r-new-wheels.webp 720w, img/nevera-r-new-wheels.webp 1920w" sizes="(max-width: 980px) 100vw, 2400px" alt="Nevera R new wheels and brakes" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">Detail · 01</span>
+          <h3>Long-spoke wheels</h3>
+          <p>20/21-inch two-tone designs, center-lock; increased rear negative camber keeps the outside rear planted.</p>
+        </div>
+      </div>
+      <div class="dcard reveal" data-stagger="1">
+        <img src="img/nevera-r-body-architecture-2.webp" srcset="img/m/nevera-r-body-architecture-2.webp 720w, img/nevera-r-body-architecture-2.webp 1920w" sizes="(max-width: 980px) 100vw, 2400px" alt="Nevera R front end detail" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">Detail · 02</span>
+          <h3>Horizontal front end</h3>
+          <p>Hood vents and splitter flicks emphasize width and stance — every opening has a cooling or aero reason.</p>
+        </div>
+      </div>
+      <div class="dcard reveal" data-stagger="2">
+        <img src="img/nevera-r-body-architecture-4.webp" srcset="img/m/nevera-r-body-architecture-4.webp 720w, img/nevera-r-body-architecture-4.webp 1920w" sizes="(max-width: 980px) 100vw, 2400px" alt="Nevera R C-pillar badge" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">Detail · 03</span>
+          <h3>Identity on the C-pillar</h3>
+          <p>'NEVERA R' etched into the carbon panel — the R's name, on the structure closest to the driver.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="media-row media-row--flip reveal">
+      <div class="media-row__media">
+        <img src="img/nevera-r-interior-2.webp" srcset="img/m/nevera-r-interior-2.webp 720w, img/nevera-r-interior-2.webp 1920w" sizes="(max-width: 980px) 100vw, 2400px" alt="Nevera R cockpit" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">Cockpit</span>
+        <h3>A dashboard you can paint</h3>
+        <p>The main dash structure and console use <b>painted carbon fiber</b>, color-matched to the body or personalized freely; the passenger display streams live lateral/longitudinal g and power output. Rotaries, stitching and anodized switchgear are all open to specification.</p>
+      </div>
+    </div>
+
+    <!-- 2025 records -->
+    <div class="prose reveal" style="margin-top:clamp(2.6rem,7vh,4.4rem);">
+      <span class="lbl">09.07.2025 · 24 Records</span>
+      <p class="lead">Two years later, on the same Papenburg straight: in its final validation before customer deliveries, the Nevera R set <b>24 records in one day</b> — rewriting every single one held by the standard Nevera.</p>
+    </div>
+
+    <div class="media-row media-row--flip reveal">
+      <div class="media-row__media">
+        <video autoplay muted loop playsinline preload="none" poster="video/records-run-poster.jpg" data-autoview>
+          <source src="video/records-run.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">0–400–0 · 25.79 s</span>
+        <h3>To 400 in 17.35 s, then stop</h3>
+        <p>Final validation in high-speed mode: 0–100 km/h in 1.72 s, 0–300 in 7.89 s, 0–400 in 17.35 s, then full braking — 25.79 s in total, 4.14 s quicker than two years before. Top speed <b>431.45 km/h</b> took the production-EV record; every figure independently verified by Dewesoft.</p>
+      </div>
+    </div>
+
+    <div class="figrow figrow--2">
+      <figure class="figure reveal">
+        <div class="figure__media"><img src="img/nevera-r-cornering.webp" srcset="img/m/nevera-r-cornering.webp 720w, img/nevera-r-cornering.webp 1920w" sizes="(max-width: 980px) 100vw, 2400px" alt="Nevera R cornering in fog" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">R · 01</span><span>Cornering in fog — the great wing and C-shaped lights, its clearest self-introduction from behind.</span></figcaption>
+      </figure>
+      <figure class="figure reveal" data-stagger="1">
+        <div class="figure__media"><img src="img/rimac-nevera-r-0-400-0.webp" srcset="img/m/rimac-nevera-r-0-400-0.webp 720w, img/rimac-nevera-r-0-400-0.webp 2400w" sizes="(max-width: 980px) 100vw, 2400px" alt="High-speed run on ATP record day" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">R · 02</span><span>ATP record day — the 24 records were written run after run like this (official press image).</span></figcaption>
+      </figure>
+    </div>
+
+    <div class="quote reveal">
+      <blockquote>"In a single generation, we had created a performance jump that previously would have taken decades. But now, through relentless innovation, Nevera R goes even faster. Breaking records is in our DNA, and we won't stop here."</blockquote>
+      <figcaption><b>Mate Rimac</b> — Founder &amp; President, Rimac Group (2025)</figcaption>
+    </div>
+
+    <div class="media-row reveal">
+      <div class="media-row__media">
+        <img src="img/rimac-nevera-r-founders.webp" srcset="img/m/rimac-nevera-r-founders.webp 720w, img/rimac-nevera-r-founders.webp 2400w" sizes="(max-width: 980px) 100vw, 2400px" alt="Nevera R Founder's Edition" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">Founder's Edition · Coda</span>
+        <h3>Ten cars, gone in a week</h3>
+        <p>At the top of the Nevera R family sits the <b>Founder's Edition</b>: ten cars worldwide, all allocated within a week of their private announcement in August 2025. The first was delivered on the frozen lake at St. Moritz on January 30, 2026 — Côte d'Azur blue over Titanium Silver, a 2 mm central roof stripe woven with the cravat motif and circuit-board graphics. Each one is handed over by Mate Rimac personally.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 Specifications ============ -->
+<div class="chapter-break" id="specs" data-chapter>
+  <span class="chapter-break__wm" aria-hidden="true">06</span>
+  <div class="ticks chapter-break__ticks"></div>
+  <div class="chapter-break__inner">
+    <span class="chapter-break__no">06</span>
+    <div>
+      <h2>Specifications<span class="latin">Nevera &amp; Nevera R</span></h2>
+      <p class="chapter-break__sub">Both cars, side by side. Sources: Rimac's official model pages, the official technical specification document and press releases.</p>
+    </div>
+  </div>
+</div>
+
+<section class="chapter" id="specbody">
+  <div class="wrap">
+    <div class="gauges">
+      <figure class="gauge reveal" data-gauge="2107" data-max="2400" data-decimals="0" data-unit="hp">
+        <div class="gauge__svg">
+          <svg viewBox="0 0 200 200"><circle class="gauge__track" cx="100" cy="100" r="84"/><circle class="gauge__bar" cx="100" cy="100" r="84"/></svg>
+          <figcaption><b>0</b></figcaption>
+        </div>
+        <p class="gauge__label">Nevera R output<small>Nevera: 1,914 hp</small></p>
+      </figure>
+      <figure class="gauge reveal" data-gauge="431.45" data-max="450" data-decimals="2" data-unit="km/h">
+        <div class="gauge__svg">
+          <svg viewBox="0 0 200 200"><circle class="gauge__track" cx="100" cy="100" r="84"/><circle class="gauge__bar" cx="100" cy="100" r="84"/></svg>
+          <figcaption><b>0</b></figcaption>
+        </div>
+        <p class="gauge__label">Fastest EV top speed<small>2025 · Nevera R, measured</small></p>
+      </figure>
+      <figure class="gauge reveal" data-gauge="1.72" data-max="3" data-decimals="2" data-unit="s">
+        <div class="gauge__svg">
+          <svg viewBox="0 0 200 200"><circle class="gauge__track" cx="100" cy="100" r="84"/><circle class="gauge__bar" cx="100" cy="100" r="84"/></svg>
+          <figcaption><b>0</b></figcaption>
+        </div>
+        <p class="gauge__label">0–100 km/h<small>Nevera: 1.81 s</small></p>
+      </figure>
+      <figure class="gauge reveal" data-gauge="25.79" data-max="32" data-decimals="2" data-unit="s">
+        <div class="gauge__svg">
+          <svg viewBox="0 0 200 200"><circle class="gauge__track" cx="100" cy="100" r="84"/><circle class="gauge__bar" cx="100" cy="100" r="84"/></svg>
+          <figcaption><b>0</b></figcaption>
+        </div>
+        <p class="gauge__label">0–400–0 km/h<small>Nevera: 29.93 s</small></p>
+      </figure>
+    </div>
+
+    <div class="specs-tabs reveal" id="specsTabs">
+      <div class="specs-tabs__nav" role="tablist">
+        <button class="specs-tabs__btn is-on" data-tab="nevera" role="tab">Nevera</button>
+        <button class="specs-tabs__btn" data-tab="neverar" role="tab">Nevera R</button>
+      </div>
+      <div class="specs-tabs__panel is-on" data-panel="nevera">
+        <div class="specs__group">
+          <div class="specs__row specs__row--hl"><span class="k">Power</span><span class="v">1,914 hp (1,408 kW)</span></div>
+          <div class="specs__row specs__row--hl"><span class="k">Motor torque</span><span class="v">2,340 Nm (13,430 Nm at the wheels)</span></div>
+          <div class="specs__row"><span class="k">Motors</span><span class="v">4 × PM · front 2×226 kW / rear 2×450 kW</span></div>
+          <div class="specs__row"><span class="k">Battery</span><span class="v">120 kWh · liquid-cooled · 6,960 × 21700</span></div>
+          <div class="specs__row"><span class="k">Charging</span><span class="v">500 kW DC · 19 min (0→80%)</span></div>
+          <div class="specs__row"><span class="k">0–100 km/h</span><span class="v">1.81 s (one-foot rollout)</span></div>
+          <div class="specs__row"><span class="k">0–300 km/h</span><span class="v">9.22 s</span></div>
+          <div class="specs__row"><span class="k">1/4 mile</span><span class="v">8.25 s</span></div>
+          <div class="specs__row specs__row--hl"><span class="k">Top speed</span><span class="v">412 km/h (with manufacturer oversight)</span></div>
+          <div class="specs__row"><span class="k">Range</span><span class="v">489 km WLTP · 30.0 kWh/100 km</span></div>
+          <div class="specs__row"><span class="k">Dimensions</span><span class="v">4,745 × 2,052 × 1,240 mm · wheelbase 2,745</span></div>
+          <div class="specs__row"><span class="k">Kerb weight</span><span class="v">2,300 kg</span></div>
+          <div class="specs__row"><span class="k">Tyres</span><span class="v">Michelin PS4S · 275/35 R20 f · 315/35 R20 r</span></div>
+          <div class="specs__row"><span class="k">Production</span><span class="v">150 units · approx. €2M</span></div>
+        </div>
+      </div>
+      <div class="specs-tabs__panel" data-panel="neverar">
+        <div class="specs__group">
+          <div class="specs__row specs__row--hl"><span class="k">Power</span><span class="v">2,107 hp (approx. 1,549 kW)</span></div>
+          <div class="specs__row specs__row--hl"><span class="k">Motor torque</span><span class="v">2,340 Nm</span></div>
+          <div class="specs__row"><span class="k">Motors</span><span class="v">4 × PM · next-gen R-AWTV calibration</span></div>
+          <div class="specs__row"><span class="k">Battery</span><span class="v">108 kWh · next-gen performance pack · lighter</span></div>
+          <div class="specs__row"><span class="k">0–100 km/h</span><span class="v">1.72 s (measured 2025)</span></div>
+          <div class="specs__row"><span class="k">0–200 km/h</span><span class="v">3.95 s</span></div>
+          <div class="specs__row"><span class="k">0–300 km/h</span><span class="v">7.89 s</span></div>
+          <div class="specs__row"><span class="k">0–400 km/h</span><span class="v">17.35 s</span></div>
+          <div class="specs__row"><span class="k">1/4 mile</span><span class="v">7.90 s</span></div>
+          <div class="specs__row specs__row--hl"><span class="k">Top speed</span><span class="v">431.45 km/h measured · 430 official</span></div>
+          <div class="specs__row"><span class="k">Aerodynamics</span><span class="v">Fixed wing · downforce +15% · efficiency +10%</span></div>
+          <div class="specs__row"><span class="k">Brakes</span><span class="v">EVO2 carbon ceramic · silicone matrix layer</span></div>
+          <div class="specs__row"><span class="k">Tyres</span><span class="v">Michelin Cup 2 · 20″ front / 21″ rear</span></div>
+          <div class="specs__row"><span class="k">Production</span><span class="v">40 units · from €2.3M</span></div>
+        </div>
+      </div>
+    </div>
+
+    <p class="fine reveal">
+      Nevera figures from the official Technical Specifications (2023-11, <a href="img/nevera-tech-specs.pdf" download>download PDF</a>) and the official model page; Nevera R figures from the 2024-08-16 launch release and the 2025-07-09 record release (Dewesoft-verified), with the official-site top speed noted alongside. Acceleration records use the standard one-foot rollout.
+    </p>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ Footer ============ -->
+<footer class="footer">
+  <div class="footer__portal">
+    <div class="wrap">
+      <p class="footer__portal-kicker mono">MORE LEGENDS</p>
+      <p class="footer__portal-title">HYPERCAR<span class="footer__portal-dot">.</span>SITE</p>
+      <p class="footer__portal-sub">The hypercar legends collection</p>
+      <a class="footer__portal-btn" href="https://www.hypercar.site" target="_blank" rel="noopener">Visit Hypercar →</a>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="footer__contact">
+      <span class="footer__contact-label mono">CONTACT</span>
+      <div class="footer__contact-btns">
+        <a class="sbtn" href="https://space.bilibili.com/675250962" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M7.1 2.6 8.9.8l2.1 2.1L13.1.8l1.8 1.8-1.7 1.7h2.5c1.9 0 3.4 1.5 3.4 3.4v8.6c0 1.9-1.5 3.4-3.4 3.4H6.3c-1.9 0-3.4-1.5-3.4-3.4V7.7c0-1.9 1.5-3.4 3.4-3.4h2.5L7.1 2.6zM7.6 4.3H6.3c-1.3 0-2.4 1.1-2.4 2.4v8.6c0 1.3 1.1 2.4 2.4 2.4h11.4c1.3 0 2.4-1.1 2.4-2.4V6.7c0-1.3-1.1-2.4-2.4-2.4h-1.3l1.2-1.2-.9-.9-2.2 2.2-2.2-2.2-.9.9 1.2 1.2H7.6z"/><circle cx="9.4" cy="12.6" r="1.5"/><circle cx="14.6" cy="12.6" r="1.5"/></svg>
+          <span class="sbtn__txt"><b>BILIBILI</b><small>@HybridV16</small></span>
+          <i class="sbtn__arrow">→</i>
+        </a>
+        <a class="sbtn" href="https://www.youtube.com/@HybridV16" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M23.5 7.2s-.2-1.7-.9-2.4c-.9-.9-1.9-.9-2.4-1C16.9 3.5 12 3.5 12 3.5s-4.9 0-8.2.3c-.5.1-1.5.1-2.4 1-.7.7-.9 2.4-.9 2.4S.3 9.2.3 11.2v1.6c0 2 .2 4 .2 4s.2 1.7.9 2.4c.9.9 2.1.9 2.6 1 1.9.2 7.9.3 7.9.3s4.9 0 8.2-.3c.5-.1 1.5-.1 2.4-1 .7-.7.9-2.4.9-2.4s.2-2 .2-4v-1.6c0-2-.2-4-.2-4zM9.7 15.4V8.2l6.4 3.6-6.4 3.6z"/></svg>
+          <span class="sbtn__txt"><b>YOUTUBE</b><small>@HybridV16</small></span>
+          <i class="sbtn__arrow">→</i>
+        </a>
+      </div>
+    </div>
+    <div class="footer__top">
+      <p class="footer__brand mono">RIMAC · NEVERA / NEVERA R</p>
+      <p class="footer__links mono">
+        <a href="index.html">中文</a><a href="en.html">English</a>
+      </p>
+    </div>
+    <div class="footer__disclaimer">
+      <p>An enthusiast-made introduction site. All content, images and videos come from Rimac's official website and official press releases, for study and showcase purposes. Rimac, Nevera, Nevera R and related trademarks and imagery are the property of Rimac Automobili / Bugatti Rimac. Performance data as officially published.</p>
+      <span class="mono">Sources: <a href="https://www.rimac-automobili.com" target="_blank" rel="noopener">RIMAC-AUTOMOBILI.COM</a> · <a href="https://www.rimac-newsroom.com" target="_blank" rel="noopener">RIMAC-NEWSROOM.COM</a> — SVETA NEDELA · CROATIA · 2009 → 2025</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/lang-detect.js?v=4"></script>
+<script src="js/main.js?v=4"></script>
+</body>
+</html>
